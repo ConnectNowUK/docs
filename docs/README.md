@@ -1,3 +1,10 @@
+---
+lang: en-US
+title: ConnectNow Docs
+description: Documentation regarding ConnectNow services
+sidebar: false
+---
+
 # Hello and welcome to ConnectNow Docs
 
 ## Editing these docs
