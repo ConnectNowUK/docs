@@ -12,6 +12,9 @@ actions:
   - text: Issue Tracker API Guide
     link: /issue-tracker/developer-guide/api/
     type: secondary
+  - text: Chat User Guide
+    link: /chat/user-guide/
+    type: primary
 features:
   - title: Simplicity first
     details: Plain English, well documented documentation.

@@ -11,14 +11,19 @@ export default defineUserConfig<DefaultThemeOptions>({
         repo: 'ConnectNowUK/docs',
         docsDir: 'docs',
         navbar: [
-            {
-                text: 'Home',
-                link: '/',
-            },
+            // {
+            //     text: 'Home',
+            //     link: '/',
+            // },
 
             {
                 text: 'Issue Tracker',
                 children: ['/issue-tracker/user-guide/', '/issue-tracker/developer-guide/api/'],
+            },
+
+            {
+                text: 'Chat',
+                children: ['/chat/user-guide/'],
             },
 
         ],
