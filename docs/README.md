@@ -10,3 +10,5 @@ sidebar: false
 ## Editing these docs
 
 These docs are written in markdown on a public repo. Edit them there.
+
+To build locally, run `npm run docs:dev`. Docs will auto build to production on deploy.

@@ -4,20 +4,7 @@ title: Issue Tracker API
 description: Description of this page
 ---
 # Issue Tracker
-Welcome to the Issue Tracker docs!
-
-## Installation
-
-Primary suggestion: https://laravel.com/docs/8.x/sail#installing-composer-dependencies-for-existing-projects - use Laravel Sail (package for dockerised container)
-
-Clone the repo, and in the directory run `composer install`. Then, run `php artisan serve`.
-
-### Notes
-- Weird issue with pre-commit hook, solved by removing this file in .git locally: https://github.com/BrainMaestro/composer-git-hooks/issues/86#issuecomment-503025850
-
-<hr/>
-
-# API docs & endpoints
+Welcome to the Issue Tracker API docs!
 
 API base:
 ```http
