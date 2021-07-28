@@ -6,13 +6,13 @@ description: Description of this page
 # Welcome to Chat by ConnectNow
 Welcome to the Chat user guide docs! These docs will guide you on using ConnectNow as a user.
 
-## Joining a conversation
-
-If you're provided with the link and password to a chat running on ConnectNow, you can join it.
-
 ::: tip
 Every secure ConnectNow chat URL starts with **https://**. Make sure yours does too to keep your information safe.
 :::
+
+## Joining a conversation
+
+If you're provided with the link and password to a chat running on ConnectNow, you can join it.
 
 ### For the first time
 
@@ -67,7 +67,7 @@ This sidebar page lists all the people, active or not, that have or currently ar
 
 ### Flows
 
-Coming soon.
+> Coming soon.
 
 ### Leave chat
 

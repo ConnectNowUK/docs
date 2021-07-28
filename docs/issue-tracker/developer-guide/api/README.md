@@ -201,7 +201,7 @@ You must confirm a subscription by following the signed URL in the email sent.
 
 You must delete a subscription by following the signed URL at the bottom of every notification email sent.
 
-## Category
+## Categories
 
 ### Get all public categories
 
@@ -263,7 +263,7 @@ User must be authenticated and have access to the company that the category belo
 DELETE /api/categories/{category-id}
 ```
 
-## Company
+## Companies
 
 ### Get all public companies
 
@@ -276,6 +276,10 @@ GET /api/companies
 | `with` | `array` | Can be any combination of: `categories`, `issues` | - | What to append to the JSON response |
 
 ### Create a company
+
+::: tip Authentication
+User must be authenticated.
+:::
 
 ```http
 POST /api/companies
@@ -321,7 +325,7 @@ DELETE /api/companies/{company-id}
 
 Authorization: user must be authenticated and have access to the specified company.
 
-## Webhook
+## Webhooks
 
 ::: tip Authentication
 User must be authenticated for all webhook endpoints and methods.
