@@ -75,6 +75,10 @@ Sample response:
 
 ### Create a issue
 
+::: tip Authentication
+User must be authenticated and have access to each company from the submitted category ids.
+:::
+
 ```http
 POST /api/issues
 ```
@@ -86,7 +90,6 @@ POST /api/issues
 | `description` | `string` | Text | yes | A description of the current status/situation of the issue |
 | `severity ` | `string` | Must be one of: `critical`, `important`, `info` | yes | The level of severity |
 
-Authorization: user must be authenticated and have access to each company from the submitted category ids.
 
 Sample response:
 ```json
@@ -123,6 +126,14 @@ Sample response:
 
 ### Edit a single issue
 
+::: tip Authentication
+User must be authenticated and have access to each company in the issue category ids. If updating category ids, the user must additionally have access/permission for the new category ids submitted.
+:::
+
+::: tip
+If the issue is already closed, you will receive a 403 response.
+:::
+
 ```http
 PUT /api/issues/{issue-id}
 ```
@@ -134,9 +145,15 @@ PUT /api/issues/{issue-id}
 | `description` | `string` | Text | yes | A description of the current status/situation of the issue |
 | `severity ` | `string` | Must be one of: `critical`, `important`, `info` | no | The level of severity |
 
-Authorization: user must be authenticated and have access to each company in the issue category ids. If updating category ids, the user must additionally have access/permission for the new category ids submitted. If the issue is already closed, you will receive a 403 response.
-
 ### Close a single issue
+
+::: tip Authentication
+User must be authenticated and have access to each company in the issue category ids.
+:::
+
+::: tip
+If the issue is already closed, you will receive a 403 response.
+:::
 
 ```http
 POST /api/issues/{issue-id}/close
@@ -146,17 +163,21 @@ POST /api/issues/{issue-id}/close
 | :--- | :--- | :--- | :--- | :--- |
 | `description` | `string` | Text | yes | A description of the current situation of the issue |
 
-Authorization: user must be authenticated and have access to each company in the issue category ids. If the issue is already closed, you will receive a 403 response.
-
 ### Delete a single issue
+
+::: tip Authentication
+User must be authenticated and have access to each company in the issue category ids.
+:::
 
 ```http
 DELETE /api/issues/{issue-id}
 ```
-Authorization: user must be authenticated and have access to each company in the issue category ids
 
 ## Issue/category subscriptions
-NOTE: to subscribe to categories instead: use `categories` in place of `issues` in this section
+
+::: tip
+To subscribe to categories instead: use `categories` in place of `issues` in this section.
+:::
 
 ### Subscribe
 
@@ -195,6 +216,10 @@ GET /api/categories
 
 ### Create a category
 
+::: tip Authentication
+User must be authenticated and have access to the company.
+:::
+
 ```http
 POST /api/categories
 ```
@@ -203,8 +228,6 @@ POST /api/categories
 | :--- | :--- | :--- | :--- | :--- |
 | `name` | `string` | Text | yes | The name of the category |
 | `company_id ` | `string` | Must be existing company id | yes | The company ID this category belongs to |
-
-Authorization: user must be authenticated and have access to the specified company.
 
 ### Get a single category
 
@@ -218,6 +241,10 @@ Sample response:
 
 ### Edit a single category
 
+::: tip Authentication
+User must be authenticated and have access to the company that the category belongs to.
+:::
+
 ```http
 PUT /api/categories/{category-id}
 ```
@@ -226,9 +253,11 @@ PUT /api/categories/{category-id}
 | :--- | :--- | :--- | :--- | :--- |
 | `name` | `string` | Text | yes | The name of the category |
 
-Authorization: user must be authenticated and have access to the company that the category belongs to.
-
 ### Delete a single category
+
+::: tip Authentication
+User must be authenticated and have access to the company that the category belongs to.
+:::
 
 ```http
 DELETE /api/categories/{category-id}
@@ -268,6 +297,10 @@ Sample response:
 
 ### Edit a single company
 
+::: tip Authentication
+User must be authenticated and have access to the company.
+:::
+
 ```http
 PUT /api/companies/{company-id}
 ```
@@ -276,9 +309,11 @@ PUT /api/companies/{company-id}
 | :--- | :--- | :--- | :--- | :--- |
 | `name` | `string` | Text | yes | The name of the category |
 
-Authorization: user must be authenticated and have access to the specified company.
-
 ### Delete a single company
+
+::: tip Authentication
+User must be authenticated and have access to the company.
+:::
 
 ```http
 DELETE /api/companies/{company-id}
@@ -288,13 +323,15 @@ Authorization: user must be authenticated and have access to the specified compa
 
 ## Webhook
 
+::: tip Authentication
+User must be authenticated for all webhook endpoints and methods.
+:::
+
 ### Get all webhooks
 
 ```http
 GET /api/webhooks
 ```
-
-Authorization: user must be authenticated as webhooks are scoped to a user.
 
 ### Create a webhook
 
@@ -317,8 +354,6 @@ Sample response:
 ```json
 ```
 
-Authorization: user must be authenticated as the owner of the specified webhook.
-
 ### Edit a single webhook
 
 ```http
@@ -329,12 +364,8 @@ PUT /api/webhooks/{webhook-id}
 | :--- | :--- | :--- | :--- | :--- |
 | `name` | `string` | Text | yes | The name of the category |
 
-Authorization: user must be authenticated as the owner of the specified webhook.
-
 ### Delete a single webhook
 
 ```http
 DELETE /api/webhooks/{webhook-id}
 ```
-
-Authorization: user must be authenticated as the owner of the specified webhook.
