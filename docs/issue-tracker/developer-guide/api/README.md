@@ -1,6 +1,6 @@
 ---
 lang: en-US
-title: Issue Tracker
+title: Issue Tracker API
 description: Description of this page
 ---
 # Issue Tracker
