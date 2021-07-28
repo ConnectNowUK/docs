@@ -7,7 +7,7 @@ description: Description of this page
 Welcome to the Issue Tracker user guide docs! These docs will guide you on using ConnectNow as a user.
 
 ::: tip
-Every secure ConnectNow Issue Tracker URL starts with "https://issuetracker.connectnow.org.uk". Make sure yours does too to keep your information safe.
+Every secure ConnectNow Issue Tracker URL starts with **https://issuetracker.connectnow.org.uk**. Make sure yours does too to keep your information safe.
 :::
 
 ## Registering

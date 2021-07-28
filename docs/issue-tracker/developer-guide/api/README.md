@@ -8,7 +8,7 @@ Welcome to the Issue Tracker API docs!
 
 API base:
 ```http
-https://weHaventDecidedYet.com
+https://issuetracker.connectnow.org.uk
 ```
 Pass an "accept" header with "application/json" for all API requests.
 
@@ -156,7 +156,7 @@ DELETE /api/issues/{issue-id}
 Authorization: user must be authenticated and have access to each company in the issue category ids
 
 ## Issue/category subscriptions
-NOTE: to subscibe to categories instead: use `categories` in place of `issues` in this section
+NOTE: to subscribe to categories instead: use `categories` in place of `issues` in this section
 
 ### Subscribe
 

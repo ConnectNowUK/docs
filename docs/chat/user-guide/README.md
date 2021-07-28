@@ -11,7 +11,7 @@ Welcome to the Chat user guide docs! These docs will guide you on using ConnectN
 If you're provided ith the link and password to a chat running on ConnectNow, you can join it.
 
 ::: tip
-Every secure ConnectNow chat URL starts with "https". Make sure yours does too to keep your information safe.
+Every secure ConnectNow chat URL starts with **https://**. Make sure yours does too to keep your information safe.
 :::
 
 ### For the first time
