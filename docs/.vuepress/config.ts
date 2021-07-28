@@ -1,0 +1,32 @@
+import { defineUserConfig } from 'vuepress'
+import type { DefaultThemeOptions } from 'vuepress'
+
+export default defineUserConfig<DefaultThemeOptions>({
+    lang: 'en-US',
+    title: 'ConnectNow Docs',
+    description: 'Just playing around',
+
+    themeConfig: {
+        logo: 'https://static1.squarespace.com/static/5f50f8731ff54a132283757b/t/5f510b6df2310a24770ebf7b/1614777163205/?format=500w',
+        nav: [
+            { text: 'Home', link: '/' },
+            { text: 'Issue Tracker', link: '/issue-tracker/' },
+            { text: 'Visit ConnectNow', link: 'https://connectnow.org.uk' }
+        ]
+    },
+    plugins: [
+        [
+            '@vuepress/plugin-search',
+            {
+                locales: {
+                    '/': {
+                        placeholder: 'Search',
+                    },
+                    '/zh/': {
+                        placeholder: '搜索',
+                    },
+                },
+            },
+        ],
+    ],
+})
