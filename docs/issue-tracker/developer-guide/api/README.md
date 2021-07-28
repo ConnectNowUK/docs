@@ -153,7 +153,7 @@ Authorization: user must be authenticated and have access to each company in the
 ```http
 DELETE /api/issues/{issue-id}
 ```
-
+Authorization: user must be authenticated and have access to each company in the issue category ids
 
 ## Issue/category subscriptions
 NOTE: to subscibe to categories instead: use `categories` in place of `issues` in this section
@@ -203,6 +203,8 @@ POST /api/categories
 | :--- | :--- | :--- | :--- | :--- |
 | `name` | `string` | Text | yes | The name of the category |
 | `company_id ` | `string` | Must be existing company id | yes | The company ID this category belongs to |
+
+Authorization: user must be authenticated and have access to the specified company.
 
 ### Get a single category
 
@@ -274,11 +276,15 @@ PUT /api/companies/{company-id}
 | :--- | :--- | :--- | :--- | :--- |
 | `name` | `string` | Text | yes | The name of the category |
 
+Authorization: user must be authenticated and have access to the specified company.
+
 ### Delete a single company
 
 ```http
 DELETE /api/companies/{company-id}
 ```
+
+Authorization: user must be authenticated and have access to the specified company.
 
 ## Webhook
 
@@ -287,6 +293,8 @@ DELETE /api/companies/{company-id}
 ```http
 GET /api/webhooks
 ```
+
+Authorization: user must be authenticated as webhooks are scoped to a user.
 
 ### Create a webhook
 
@@ -309,6 +317,8 @@ Sample response:
 ```json
 ```
 
+Authorization: user must be authenticated as the owner of the specified webhook.
+
 ### Edit a single webhook
 
 ```http
@@ -319,8 +329,12 @@ PUT /api/webhooks/{webhook-id}
 | :--- | :--- | :--- | :--- | :--- |
 | `name` | `string` | Text | yes | The name of the category |
 
+Authorization: user must be authenticated as the owner of the specified webhook.
+
 ### Delete a single webhook
 
 ```http
 DELETE /api/webhooks/{webhook-id}
 ```
+
+Authorization: user must be authenticated as the owner of the specified webhook.
