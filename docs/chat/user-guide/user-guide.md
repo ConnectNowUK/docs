@@ -16,13 +16,13 @@ Every secure ConnectNow chat URL starts with **https://**. Make sure yours does 
 
 If you've been provided with the link and password to a chat running on ConnectNow, you can join the conversation.
 
-1. When prompted, fill in the chat password that was provided to you. If your link already contained the chat password, you will not see this screen. ![Pasword screen](./join_convo_password.jpg)
+1. When prompted, fill in the chat password that was provided to you. If your link already contained the chat password, you will not see this screen. ![Password screen](./join_convo_password.jpg)
 
-2. Fill in your name, surname, and email address. This will be used to identify who you are in the chat, and all chat members will be able to see this. ![Pasword screen](./join_convo_who.jpg)
+2. Fill in your name, surname, and email address. This will be used to identify who you are in the chat, and all chat members will be able to see this. ![Join screen](./join_convo_who.jpg)
 
 If you're logging in to the chat for the first time, you're done. Otherwise, you'll have to complete a quick verification
 
-3. Check your email for an authentication code. When prompted, fill in this authentication code. ![Pasword screen](./join_convo_confirm.jpg)
+3. Check your email for an authentication code. When prompted, fill in this authentication code. ![Auth code confirm screen](./join_convo_confirm.jpg)
 
 ## Leaving a conversation
 
@@ -42,7 +42,7 @@ ConnectNow Chat is a super powerful messaging platform, with all the bells and w
 
 ### Sending text
 
-To send text, use the input bar at the bottom to input your text. To actually send it, you can either press enter, or the "Send" button to the right of the input field. ![Pasword screen](./input_bar.jpg)
+To send text, use the input bar at the bottom to input your text. To actually send it, you can either press enter, or the "Send" button to the right of the input field. ![input bar](./input_bar.jpg)
 
 ### Sending files, images, videos, and more
 
