@@ -1,7 +1,7 @@
 ---
 lang: en-US
 title: Chat User Guide
-description: Description of this page
+description: User Guide for using ConnectNow Chat
 ---
 # Welcome to Chat by ConnectNow
 Welcome to the Chat user guide docs! These docs will guide you on using ConnectNow as a user.
@@ -12,7 +12,7 @@ Every secure ConnectNow chat URL starts with **https://**. Make sure yours does 
 
 ## Joining a conversation
 
-If you're provided with the link and password to a chat running on ConnectNow, you can join it.
+If you've been provided with the link and password to a chat running on ConnectNow, you can join the conversation.
 
 ### For the first time
 
@@ -34,6 +34,12 @@ Sometimes, and especially if you haven't joined a chat in a long time, you may b
 To leave the conversation, open the [sidebar](#sidebar) on the right side by pressing the "i" icon in the top-right of the navbar. Then, on the sidebar home, scroll to the bottom and choose "Leave chat".
 
 When you leave a conversation, you will still be able to later rejoin by [rejoining a conversation you were previously a part of](#rejoining-a-conversation-you-were-previously-a-part-of). Regardless of whether or not you rejoin, other members of the chat will be able to see that you were a previous participant.
+
+## Inviting people to the conversation
+
+You can invite as many people as allowed on your plan to each chat.
+
+To copy the current chat link, open the sidebar and visit the [People in this chat](#people-in-this-chat) page to copy the link. Then, send this link (along with the chat password that you used) to anyone you'd like to invite.
 
 ## Messaging
 
@@ -64,6 +70,8 @@ This page shows information about the current chat, including its ID, date of cr
 ### People in this chat
 
 This sidebar page lists all the people, active or not, that have or currently are part of the chat. You can click on any one of them to see more info about each person.
+
+On this sidebar page, you will see a button at the top that will let you "Share join link". Use this button to copy the chat link to your clipboard, so that you can send it to others as needed.
 
 ### Flows
 
