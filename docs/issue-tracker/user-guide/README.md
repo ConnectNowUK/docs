@@ -6,6 +6,10 @@ description: Description of this page
 # Welcome to Issue Tracker
 Welcome to the Issue Tracker user guide docs! These docs will guide you on using ConnectNow as a user.
 
+::: tip
+Every secure ConnectNow Issue Tracker URL starts with "https://issuetracker.connectnow.org.uk". Make sure yours does too to keep your information safe.
+:::
+
 ## Registering
 
 First, go to <https://issuetracker.connectnow.org.uk/register>.
@@ -16,7 +20,7 @@ Fill in the details asked of you. You will be sent a verification email. Click t
 
 To log in, go to <https://issuetracker.connectnow.org.uk/login> and provide your email address and password.
 
-## Resseting your password
+## Resetting your password
 
 To reset your password, go to <https://issuetracker.connectnow.org.uk/forgot-password>, provide your email address when asked, and follow the on-screen instructions.
 
@@ -36,7 +40,7 @@ Click the link at the bottom of the email within two days to stop receiving noti
 
 ## Issuing API tokens
 
-Issue Tracker is primarly interacted with via its very powerful API. Some endpoints require authorization, which you can do by issuing yourself a token.
+Issue Tracker is primarily interacted with via its very powerful API. Some endpoints require authorization, which you can do by issuing yourself a token.
 
 If you're unsure of what this section means, contact your developer team.
 

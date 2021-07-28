@@ -10,10 +10,14 @@ Welcome to the Chat user guide docs! These docs will guide you on using ConnectN
 
 If you're provided ith the link and password to a chat running on ConnectNow, you can join it.
 
+::: tip
+Every secure ConnectNow chat URL starts with "https". Make sure yours does too to keep your information safe.
+:::
+
 ### For the first time
 
 1. When prompted, fill in the chat password that was provided to you. If your link already contained the chat password, you will not see this screen.
-2. Fill in your name, surname, and email address. This will be used to identify who you are in the chat, and all chat memebers will be able to see this.
+2. Fill in your name, surname, and email address. This will be used to identify who you are in the chat, and all chat members will be able to see this.
 3. Join the chat.
 
 ### Rejoining a conversation you were previously a part of
@@ -21,7 +25,7 @@ If you're provided ith the link and password to a chat running on ConnectNow, yo
 Sometimes, and especially if you haven't joined a chat in a long time, you may be asked to re-join the chat.
 
 1. When prompted, fill in the chat password that was provided to you. If your link already contained the chat password, you will not see this screen.
-2. Fill in your name, surname, and email address. This will be used to identify who you are in the chat, and all chat memebers will be able to see this.
+2. Fill in your name, surname, and email address. This will be used to identify who you are in the chat, and all chat members will be able to see this.
 3. Check your email for an authentication code. When prompted, fill in this authentication code.
 4. Join the chat.
 
@@ -37,7 +41,7 @@ ConnectNow Chat is a super powerful messaging platform, with all the bells and w
 
 ### Sending text
 
-To send text, use the unput bar at the bottom to input your text. To actually send it, you can either press enter, or the "Send" button to the right of the input field.
+To send text, use the input bar at the bottom to input your text. To actually send it, you can either press enter, or the "Send" button to the right of the input field.
 
 ### Sending files
 
@@ -51,4 +55,4 @@ Depending on the browser you are on, there is native support of PDF files, image
 
 ## Sidebar
 
-The sidebar serves as a central control panel while you are in a chat. You can open and close it by toggling the "i" icon on the top rigt to open it, and the "x" icon to then close it.
+The sidebar serves as a central control panel while you are in a chat. You can open and close it by toggling the "i" icon on the top right to open it, and the "x" icon to then close it.
