@@ -20,6 +20,20 @@ To log in, go to <https://issuetracker.connectnow.org.uk/login> and provide your
 
 To reset your password, go to <https://issuetracker.connectnow.org.uk/forgot-password>, provide your email address when asked, and follow the on-screen instructions.
 
+## Confirming notification subscriptions
+
+When you or someone signs you up to receive notifications about a specific issue or category, you will be sent only 1 email to confirm you want to indeed get such notifications.
+
+To agree to receive notifications about a given issue or category, click the button in the email within two days.
+
+To no longer receive emails about a given issue, simply ignore the email. Do note, after two days you will not be able to subscribe to the issue again.
+
+## Unsubscribing from notifications
+
+Once you have subscribed to an issue, every subsequent email about the issue (except when the issue is closed) will contain an unsubscribe link at the bottom. 
+
+Click the link at the bottom of the email within two days to stop receiving notifications about the given issue.
+
 ## Issuing API tokens
 
 Issue Tracker is primarly interacted with via its very powerful API. Some endpoints require authorization, which you can do by issuing yourself a token.
@@ -30,10 +44,6 @@ You can issue API tokens to access Issue Tracker via API. First, [log in](#loggi
 
 Head over to the [API docs](../developer-guide/api/) for more info on using the API.
 
-## Confirming notification subscriptions
+## Revoking API tokens
 
-When you or someone signs you up to receive notifications about a specific issue or category, you will be sent only 1 email to confirm you want to indeed get such notifications.
-
-To agree to receive notifications about a given issue or category, click the button in the email within 2 days.
-
-To no longer receive emails about a given issue, simply ignore the email. Do note, after 2 days you will not be able to subscribe to the issue again.
+When you need to revoke an API token, you can do so after logging in to Issue Tracker. Then, on the row of the token you want to revoke, click on "revoke token".
