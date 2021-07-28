@@ -8,7 +8,7 @@ Welcome to the Chat user guide docs! These docs will guide you on using ConnectN
 
 ## Joining a conversation
 
-If you're provided ith the link and password to a chat running on ConnectNow, you can join it.
+If you're provided with the link and password to a chat running on ConnectNow, you can join it.
 
 ::: tip
 Every secure ConnectNow chat URL starts with **https://**. Make sure yours does too to keep your information safe.
@@ -33,7 +33,7 @@ Sometimes, and especially if you haven't joined a chat in a long time, you may b
 
 To leave the conversation, open the [sidebar](#sidebar) on the right side by pressing the "i" icon in the top-right of the navbar. Then, on the sidebar home, scroll to the bottom and choose "Leave chat".
 
-When you leave a conversation, you will still be able to later rejoin by [rejoining a conversation you were previously a part of](#rejoining-a-conversation-you-were-previously-a-part-of).
+When you leave a conversation, you will still be able to later rejoin by [rejoining a conversation you were previously a part of](#rejoining-a-conversation-you-were-previously-a-part-of). Regardless of whether or not you rejoin, other members of the chat will be able to see that you were a previous participant.
 
 ## Messaging
 
@@ -43,7 +43,7 @@ ConnectNow Chat is a super powerful messaging platform, with all the bells and w
 
 To send text, use the input bar at the bottom to input your text. To actually send it, you can either press enter, or the "Send" button to the right of the input field.
 
-### Sending files
+### Sending files, images, videos, and more
 
 To send files, select files by clicking on the paperclip icon just to the right of the text input towards the bottom of the screen.
 
@@ -56,3 +56,19 @@ Depending on the browser you are on, there is native support of PDF files, image
 ## Sidebar
 
 The sidebar serves as a central control panel while you are in a chat. You can open and close it by toggling the "i" icon on the top right to open it, and the "x" icon to then close it.
+
+### About this chat
+
+This page shows information about the current chat, including its ID, date of creation, and company it belongs to.
+
+### People in this chat
+
+This sidebar page lists all the people, active or not, that have or currently are part of the chat. You can click on any one of them to see more info about each person.
+
+### Flows
+
+Coming soon.
+
+### Leave chat
+
+Leave the current conversation. See: [Leaving a conversation](#leaving-a-conversation).
