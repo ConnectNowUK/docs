@@ -13,7 +13,7 @@ actions:
     link: /issue-tracker/developer-guide/api/
     type: secondary
   - text: Chat User Guide
-    link: /chat/user-guide/
+    link: /chat/user-guide/user-guide.md
     type: primary
 features:
   - title: Simplicity first

@@ -3,11 +3,11 @@ lang: en-US
 title: Issue Tracker API
 description: Description of this page
 ---
-# Issue Tracker
+# Issue Tracker API Docs
 Welcome to the Issue Tracker API docs!
 
 API base:
-```http
+```http:no-line-numbers
 https://issuetracker.connectnow.org.uk
 ```
 Pass an "accept" header with "application/json" for all API requests.
@@ -35,7 +35,7 @@ Issue Tracker returns the following status codes in its API:
 
 ### Get all public issues
 
-```http
+```http:no-line-numbers
 GET /api/issues
 ```
 
@@ -79,7 +79,7 @@ Sample response:
 User must be authenticated and have access to each company from the submitted category ids.
 :::
 
-```http
+```http:no-line-numbers
 POST /api/issues
 ```
 
@@ -104,7 +104,7 @@ Sample response:
 
 ### Get a single issue
 
-```http
+```http:no-line-numbers
 GET /api/issues/{issue-id}
 ```
 
@@ -134,7 +134,7 @@ User must be authenticated and have access to each company in the issue category
 If the issue is already closed, you will receive a 403 response.
 :::
 
-```http
+```http:no-line-numbers
 PUT /api/issues/{issue-id}
 ```
 
@@ -155,7 +155,7 @@ User must be authenticated and have access to each company in the issue category
 If the issue is already closed, you will receive a 403 response.
 :::
 
-```http
+```http:no-line-numbers
 POST /api/issues/{issue-id}/close
 ```
 
@@ -169,7 +169,7 @@ POST /api/issues/{issue-id}/close
 User must be authenticated and have access to each company in the issue category ids.
 :::
 
-```http
+```http:no-line-numbers
 DELETE /api/issues/{issue-id}
 ```
 
@@ -181,7 +181,7 @@ To subscribe to categories instead: use `categories` in place of `issues` in thi
 
 ### Subscribe
 
-```http
+```http:no-line-numbers
 POST /api/issues/{issue-id}/subscriptions
 ```
 
@@ -205,7 +205,7 @@ You must delete a subscription by following the signed URL at the bottom of ever
 
 ### Get all public categories
 
-```http
+```http:no-line-numbers
 GET /api/categories
 ```
 
@@ -220,7 +220,7 @@ GET /api/categories
 User must be authenticated and have access to the company.
 :::
 
-```http
+```http:no-line-numbers
 POST /api/categories
 ```
 
@@ -231,7 +231,7 @@ POST /api/categories
 
 ### Get a single category
 
-```http
+```http:no-line-numbers
 GET /api/categories/{category-id}
 ```
 
@@ -245,7 +245,7 @@ Sample response:
 User must be authenticated and have access to the company that the category belongs to.
 :::
 
-```http
+```http:no-line-numbers
 PUT /api/categories/{category-id}
 ```
 
@@ -259,7 +259,7 @@ PUT /api/categories/{category-id}
 User must be authenticated and have access to the company that the category belongs to.
 :::
 
-```http
+```http:no-line-numbers
 DELETE /api/categories/{category-id}
 ```
 
@@ -267,7 +267,7 @@ DELETE /api/categories/{category-id}
 
 ### Get all public companies
 
-```http
+```http:no-line-numbers
 GET /api/companies
 ```
 
@@ -281,7 +281,7 @@ GET /api/companies
 User must be authenticated.
 :::
 
-```http
+```http:no-line-numbers
 POST /api/companies
 ```
 
@@ -291,7 +291,7 @@ POST /api/companies
 
 ### Get a single company
 
-```http
+```http:no-line-numbers
 GET /api/companies/{company-id}
 ```
 
@@ -305,7 +305,7 @@ Sample response:
 User must be authenticated and have access to the company.
 :::
 
-```http
+```http:no-line-numbers
 PUT /api/companies/{company-id}
 ```
 
@@ -319,7 +319,7 @@ PUT /api/companies/{company-id}
 User must be authenticated and have access to the company.
 :::
 
-```http
+```http:no-line-numbers
 DELETE /api/companies/{company-id}
 ```
 
@@ -333,13 +333,13 @@ User must be authenticated for all webhook endpoints and methods.
 
 ### Get all webhooks
 
-```http
+```http:no-line-numbers
 GET /api/webhooks
 ```
 
 ### Create a webhook
 
-```http
+```http:no-line-numbers
 POST /api/webhooks
 ```
 
@@ -350,7 +350,7 @@ POST /api/webhooks
 
 ### Get a single webhook
 
-```http
+```http:no-line-numbers
 GET /api/webhooks/{webhook-id}
 ```
 
@@ -360,7 +360,7 @@ Sample response:
 
 ### Edit a single webhook
 
-```http
+```http:no-line-numbers
 PUT /api/webhooks/{webhook-id}
 ```
 
@@ -370,6 +370,6 @@ PUT /api/webhooks/{webhook-id}
 
 ### Delete a single webhook
 
-```http
+```http:no-line-numbers
 DELETE /api/webhooks/{webhook-id}
 ```
