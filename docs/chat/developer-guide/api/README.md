@@ -167,10 +167,10 @@ This endpoint is used to exchange a valid auth-code for a chat-user token, which
 POST /chats/{chat-id}/users/get-token
 ```
 
-| Parameter | Type | Rules | required | Description |
+| Parameter | Type | Rules | Required | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `email` | `email` | A valid email address | yes |  Email of the person requesting a token |
-| `auth-code` | `int` | A valid auth code | yes |  The auth code sent to the persons email |
+| `email` | `email` | A valid email address | :white_check_mark: |  Email of the person requesting a token |
+| `auth-code` | `int` | A valid auth code | :white_check_mark: |  The auth code sent to the persons email |
 
 ## Chat password
 

@@ -83,12 +83,12 @@ User must be authenticated and have access to each company from the submitted ca
 POST /api/issues
 ```
 
-| Parameter | Type | Rules | required | Description |
+| Parameter | Type | Rules | Required | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `category_ids` | `array` | Must contain existing IDs | yes |  Category IDs the issue belongs to |
-| `name` | `string` | Text | yes | The name of the issue |
-| `description` | `string` | Text | yes | A description of the current status/situation of the issue |
-| `severity ` | `string` | Must be one of: `critical`, `important`, `info` | yes | The level of severity |
+| `category_ids` | `array` | Must contain existing IDs | :white_check_mark: |  Category IDs the issue belongs to |
+| `name` | `string` | Text | :white_check_mark: | The name of the issue |
+| `description` | `string` | Text | :white_check_mark: | A description of the current status/situation of the issue |
+| `severity ` | `string` | Must be one of: `critical`, `important`, `info` | :white_check_mark: | The level of severity |
 
 
 Sample response:
@@ -138,12 +138,12 @@ If the issue is already closed, you will receive a 403 response.
 PUT /api/issues/{issue-id}
 ```
 
-| Parameter | Type | Rules | required | Description |
+| Parameter | Type | Rules | Required | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `category_ids` | `array` | Must contain existing IDs | no |  Category IDs the issue belongs to. If parameter is passed, ID's will be synced, meaning those not present in the request array will be removed from the issue |
-| `name` | `string` | Text | no | The name of the issue |
-| `description` | `string` | Text | yes | A description of the current status/situation of the issue |
-| `severity ` | `string` | Must be one of: `critical`, `important`, `info` | no | The level of severity |
+| `category_ids` | `array` | Must contain existing IDs | - |  Category IDs the issue belongs to. If parameter is passed, ID's will be synced, meaning those not present in the request array will be removed from the issue |
+| `name` | `string` | Text | - | The name of the issue |
+| `description` | `string` | Text | :white_check_mark: | A description of the current status/situation of the issue |
+| `severity ` | `string` | Must be one of: `critical`, `important`, `info` | - | The level of severity |
 
 ### Close a single issue
 
@@ -159,9 +159,9 @@ If the issue is already closed, you will receive a 403 response.
 POST /api/issues/{issue-id}/close
 ```
 
-| Parameter | Type | Rules | required | Description |
+| Parameter | Type | Rules | Required | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `description` | `string` | Text | yes | A description of the current situation of the issue |
+| `description` | `string` | Text | :white_check_mark: | A description of the current situation of the issue |
 
 ### Delete a single issue
 
@@ -185,9 +185,9 @@ To subscribe to categories instead: use `categories` in place of `issues` in thi
 POST /api/issues/{issue-id}/subscriptions
 ```
 
-| Parameter | Type | Rules | required | Description |
+| Parameter | Type | Rules | Required | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `email` | `string` | A valid email address | yes |  Category IDs the issue belongs to |
+| `email` | `string` | A valid email address | :white_check_mark: |  Category IDs the issue belongs to |
 
 If the subscription does not exist, it will be created and a confirmation email will be sent to the user. The API returns a 201 CREATED status code.
 
@@ -224,10 +224,10 @@ User must be authenticated and have access to the company.
 POST /api/categories
 ```
 
-| Parameter | Type | Rules | required | Description |
+| Parameter | Type | Rules | Required | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | `string` | Text | yes | The name of the category |
-| `company_id ` | `string` | Must be existing company id | yes | The company ID this category belongs to |
+| `name` | `string` | Text | :white_check_mark: | The name of the category |
+| `company_id ` | `string` | Must be existing company id | :white_check_mark: | The company ID this category belongs to |
 
 ### Get a single category
 
@@ -249,9 +249,9 @@ User must be authenticated and have access to the company that the category belo
 PUT /api/categories/{category-id}
 ```
 
-| Parameter | Type | Rules | required | Description |
+| Parameter | Type | Rules | Required | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | `string` | Text | yes | The name of the category |
+| `name` | `string` | Text | :white_check_mark: | The name of the category |
 
 ### Delete a single category
 
@@ -285,9 +285,9 @@ User must be authenticated.
 POST /api/companies
 ```
 
-| Parameter | Type | Rules | required | Description |
+| Parameter | Type | Rules | Required | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | `string` | Text | yes | The name of the category |
+| `name` | `string` | Text | :white_check_mark: | The name of the category |
 
 ### Get a single company
 
@@ -309,9 +309,9 @@ User must be authenticated and have access to the company.
 PUT /api/companies/{company-id}
 ```
 
-| Parameter | Type | Rules | required | Description |
+| Parameter | Type | Rules | Required | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | `string` | Text | yes | The name of the category |
+| `name` | `string` | Text | :white_check_mark: | The name of the category |
 
 ### Delete a single company
 
@@ -343,10 +343,10 @@ GET /api/webhooks
 POST /api/webhooks
 ```
 
-| Parameter | Type | Rules | required | Description |
+| Parameter | Type | Rules | Required | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `url` | `string` | Valid URL, unique | yes | The webhook url |
-| `description` | `string` | Text | no | The description of what the webhook is for |
+| `url` | `string` | Valid URL, unique | :white_check_mark: | The webhook url |
+| `description` | `string` | Text | - | The description of what the webhook is for |
 
 ### Get a single webhook
 
@@ -364,9 +364,9 @@ Sample response:
 PUT /api/webhooks/{webhook-id}
 ```
 
-| Parameter | Type | Rules | required | Description |
+| Parameter | Type | Rules | Required | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `name` | `string` | Text | yes | The name of the category |
+| `name` | `string` | Text | :white_check_mark: | The name of the category |
 
 ### Delete a single webhook
 

@@ -6,6 +6,8 @@ description: User Guide for using ConnectNow Chat
 # Welcome to Chat by ConnectNow
 Welcome to the Chat user guide docs! These docs will guide you on using ConnectNow as a user.
 
+ConnectNow Chat is a powerful tool allowing you to communicate with fellow team members, customers, or external consultants.
+
 ::: tip
 Every secure ConnectNow chat URL starts with **https://**. Make sure yours does too to keep your information safe.
 :::
@@ -14,20 +16,13 @@ Every secure ConnectNow chat URL starts with **https://**. Make sure yours does 
 
 If you've been provided with the link and password to a chat running on ConnectNow, you can join the conversation.
 
-### For the first time
+1. When prompted, fill in the chat password that was provided to you. If your link already contained the chat password, you will not see this screen. ![Pasword screen](./join_convo_password.jpg)
 
-1. When prompted, fill in the chat password that was provided to you. If your link already contained the chat password, you will not see this screen.
-2. Fill in your name, surname, and email address. This will be used to identify who you are in the chat, and all chat members will be able to see this.
-3. Join the chat.
+2. Fill in your name, surname, and email address. This will be used to identify who you are in the chat, and all chat members will be able to see this. ![Pasword screen](./join_convo_who.jpg)
 
-### Rejoining a conversation you were previously a part of
+If you're logging in to the chat for the first time, you're done. Otherwise, you'll have to complete a quick verification
 
-Sometimes, and especially if you haven't joined a chat in a long time, you may be asked to re-join the chat.
-
-1. When prompted, fill in the chat password that was provided to you. If your link already contained the chat password, you will not see this screen.
-2. Fill in your name, surname, and email address. This will be used to identify who you are in the chat, and all chat members will be able to see this.
-3. Check your email for an authentication code. When prompted, fill in this authentication code.
-4. Join the chat.
+3. Check your email for an authentication code. When prompted, fill in this authentication code. ![Pasword screen](./join_convo_confirm.jpg)
 
 ## Leaving a conversation
 
@@ -47,7 +42,7 @@ ConnectNow Chat is a super powerful messaging platform, with all the bells and w
 
 ### Sending text
 
-To send text, use the input bar at the bottom to input your text. To actually send it, you can either press enter, or the "Send" button to the right of the input field.
+To send text, use the input bar at the bottom to input your text. To actually send it, you can either press enter, or the "Send" button to the right of the input field. ![Pasword screen](./input_bar.jpg)
 
 ### Sending files, images, videos, and more
 
@@ -62,6 +57,8 @@ Depending on the browser you are on, there is native support of PDF files, image
 ## Sidebar
 
 The sidebar serves as a central control panel while you are in a chat. You can open and close it by toggling the "i" icon on the top right to open it, and the "x" icon to then close it.
+
+When you navigate within the sidebar and across sidebar pages, you can always go back by pressing the "back" button in the bottom left corner of the sidebar.
 
 ### About this chat
 
