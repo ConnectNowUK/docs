@@ -36,10 +36,6 @@ This documentation is a work in progress.
 
 ### Editing chat settings
 
-### Creating an embed-able "start-chat" button
-
-You can generate a button that you can place anywhere on you site. This button will enable your customers and users to start chats at your company at the click of a button.
-
 ## Settings
 
 ### Editing company logo
@@ -49,3 +45,9 @@ You can generate a button that you can place anywhere on you site. This button w
 ### Changing subscription plans
 
 ### Cancelling all plans and closing the company
+
+## Sharing
+
+### Creating an embed-able "start-chat" button
+
+You can generate a button that you can place anywhere on you site. This button will enable your customers and users to start chats at your company at the click of a button.
