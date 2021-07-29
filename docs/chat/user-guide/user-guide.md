@@ -36,6 +36,14 @@ You can invite as many people as allowed on your plan to each chat.
 
 To copy the current chat link, open the sidebar and visit the [People in this chat](#people-in-this-chat) page to copy the link. Then, send this link (along with the chat password that you used) to anyone you'd like to invite.
 
+## Starting a new conversation
+
+Depending how your company has implemented ConnectNow chat, you will be able to start a conversation using a button or a link.
+
+![Start conversation button](./start.jpg)
+
+Check with the company you want to chat at to find out how to start your own conversations.
+
 ## Messaging
 
 ConnectNow Chat is a super powerful messaging platform, with all the bells and whistles you'd expect of a modern system.
