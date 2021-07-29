@@ -44,6 +44,12 @@ export default defineUserConfig<DefaultThemeOptions>({
     plugins: [
         'check-md',
         [
+            '@vuepress/plugin-google-analytics',
+            {
+                id: 'G-HMS6SBZGCE',
+            },
+        ],
+        [
             '@vuepress/plugin-search',
             {
                 locales: {
