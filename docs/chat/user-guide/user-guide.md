@@ -56,6 +56,8 @@ Depending on the browser you are on, there is native support of PDF files, image
 
 ## Sidebar
 
+![Sidebar](./sidebar.gif)
+
 The sidebar serves as a central control panel while you are in a chat. You can open and close it by toggling the "i" icon on the top right to open it, and the "x" icon to then close it.
 
 When you navigate within the sidebar and across sidebar pages, you can always go back by pressing the "back" button in the bottom left corner of the sidebar.
