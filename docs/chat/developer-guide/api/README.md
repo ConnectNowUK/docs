@@ -161,7 +161,7 @@ DELETE /api/chats/{chat-id}/messages/{chat-message-id}
 
 ### Get valid chat-user token
 
-This endpoint is used to exchange a valid auth-code for a chat-user token, which can then be saved in localstorage and is required when creating chat messages.
+This endpoint is used to exchange a valid auth-code for a chat-user token, which can then be saved in something like the local-storage and is required when creating chat messages.
 
 ```http:no-line-numbers
 POST /chats/{chat-id}/users/get-token

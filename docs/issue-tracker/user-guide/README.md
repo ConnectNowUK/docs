@@ -4,7 +4,7 @@ title: Issue Tracker User Guide
 description: Description of this page
 ---
 # Welcome to Issue Tracker
-Welcome to the Issue Tracker user guide docs! These docs will guide you on using ConnectNow as a user.
+Welcome to the Issue Tracker user guide docs! These docs will guide you on using ConnectNow as a user with a registered account.
 
 ::: tip
 Every secure ConnectNow Issue Tracker URL starts with **https://issuetracker.connectnow.org.uk**. Make sure yours does too to keep your information safe.
@@ -51,3 +51,7 @@ Head over to the [API docs](../developer-guide/api/) for more info on using the 
 ## Revoking API tokens
 
 When you need to revoke an API token, you can do so after logging in to Issue Tracker. Then, on the row of the token you want to revoke, click on "revoke token".
+
+## Managing your subscription plan
+
+You can edit your billing plan, and consequently the features available to you, on your administration page. After logging in, scroll down below the "Tokens" section to change your current plan.
