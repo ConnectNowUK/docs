@@ -38,7 +38,7 @@ To copy the current chat link, open the sidebar and visit the [People in this ch
 
 ## Starting a new conversation
 
-Depending how your company has implemented ConnectNow chat, you will be able to start a conversation using a button or a link.
+Depending how your company has implemented ConnectNow chat, you will be able to start a conversation using a button or a link. This will open a new chat window in your browser.
 
 ![Start conversation button](./start.jpg)
 
