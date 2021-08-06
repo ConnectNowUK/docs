@@ -52,6 +52,8 @@ ConnectNow Chat is a super powerful messaging platform, with all the bells and w
 
 To send text, use the input bar at the bottom to input your text. To actually send it, you can either press enter, or the "Send" button to the right of the input field. ![input bar](./input_bar.jpg)
 
+You can also send multi-line messages using `shift+enter`.
+
 ### Sending files, images, videos, and more
 
 To send files, select files by clicking on the paperclip icon just to the right of the text input towards the bottom of the screen.
