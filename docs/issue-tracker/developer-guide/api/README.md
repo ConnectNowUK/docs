@@ -373,3 +373,19 @@ PUT /api/webhooks/{webhook-id}
 ```http:no-line-numbers
 DELETE /api/webhooks/{webhook-id}
 ```
+
+### Available of webhook events
+
+#### webhook_created
+
+#### webhook_deleted
+
+#### category_subscription_confirmation
+
+#### issue_subscription_confirmation
+
+#### issue_created
+
+#### issue_closed
+
+#### issue_updated
