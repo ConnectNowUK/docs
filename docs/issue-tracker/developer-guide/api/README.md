@@ -374,7 +374,7 @@ PUT /api/webhooks/{webhook-id}
 DELETE /api/webhooks/{webhook-id}
 ```
 
-### Available of webhook events
+### Available webhook events
 
 #### webhook_created
 
@@ -382,7 +382,11 @@ DELETE /api/webhooks/{webhook-id}
 
 #### category_subscription_confirmation
 
+Sends event to user when the user subscribes to a category. Includes the subscription confirmation link.
+
 #### issue_subscription_confirmation
+
+Sends event to user when the user subscribes to an issue. Includes the subscription confirmation link.
 
 #### issue_created
 
