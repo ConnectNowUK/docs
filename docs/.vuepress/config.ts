@@ -7,7 +7,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     description: 'Just playing around',
 
     themeConfig: {
-        logo: 'https://static1.squarespace.com/static/5f50f8731ff54a132283757b/t/5f510b6df2310a24770ebf7b/1614777163205/?format=500w',
+        logo: 'https://public.connectnow.org.uk/logo.svg',
         docsRepo: 'ConnectNowUK/docs',
         docsDir: 'docs',
         displayAllHeaders: true,
