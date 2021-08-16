@@ -4,7 +4,7 @@ title: Queue API Guide
 description: Developer Guide for people using ConnectNow Queue System
 ---
 # ConnectNow Queue Concept Overview
-Welcome to the Queue company manager guide docs!
+Welcome to the Queue System developer-guide API docs!
 
 ::: warning
 This documentation is a work in progress.
@@ -192,6 +192,11 @@ POST /api/queues
 | `priority_delay` | `number` | A valid integer | - | Time delay in seconds for a query to escalate to additional agents (see: [Concept Overview - queue routing logic](../../user-guide/concept-overview.html#queue-routing-logic]))  |
 | `is_active` | `boolean` |  `true` or `false` | - | Whether this company is active or not |
 
+
+### Delete a queue
+
+Note: queues with a set `company_user_id` cannot be deleted. To delete such queues, remove the user from the company.
+
 ## Query
 
 ### Create a new query
@@ -211,7 +216,7 @@ POST /api/queues
 
 ## Query notes
 
-You can add additional notes to each query that can are visible to all users responding to a query, regardless of the queue.
+You can add additional notes to each query that are visible to all users responding to a query, regardless of the queue.
 
 ## Query queues
 
