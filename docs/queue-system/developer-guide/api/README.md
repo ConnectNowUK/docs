@@ -184,7 +184,7 @@ POST /api/queues
 | :--- | :--- | :--- | :--- | :--- |
 | `name` | `string` | Text | :white_check_mark: | The name of the category |
 | `company_id` | `integer` | A valid company ID | :white_check_mark: | The ID of the company |
-| `password` | `string` | TODO: password rules | - | The password for this queue |
+| `password` | `string` | TODO: password rules | - | The password for this queue (see: [Concept Overview - password protected queues](../../user-guide#password-protected-queues])) |
 | `company_user_id` | `integer` | A valid company user ID | - | If set, this queue is a personal queue belonging to the specified company user (see: [Concept Overview - personal queues](../../user-guide#personal-queues])) |
 | `priority_delay` | `number` | A valid integer | - | Time delay in seconds for a queued object to escalate to additional agents (see: [Concept Overview - queue routing logic](../../user-guide#queue-routing-logic]))  |
 | `is_active` | `boolean` |  `true` or `false` | - | Whether this company is active or not |
