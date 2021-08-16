@@ -39,6 +39,22 @@ export default defineUserConfig<DefaultThemeOptions>({
                 ],
             },
 
+            {
+                text: 'Queue',
+                children: [
+                    {
+                        text: 'User Guides',
+                        children: [
+                            '/queue-system/user-guide/concept-overview.md',
+                        ],
+                    },
+                    {
+                        text: 'Developer Guides',
+                        children: ['/queue-system/developer-guide/api/'],
+                    },
+                ],
+            },
+
         ],
     },
     plugins: [
