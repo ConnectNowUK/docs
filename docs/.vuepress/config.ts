@@ -1,5 +1,6 @@
 import { defineUserConfig } from 'vuepress'
 import type { DefaultThemeOptions } from 'vuepress'
+import { path } from '@vuepress/utils'
 
 export default defineUserConfig<DefaultThemeOptions>({
     lang: 'en-US',
@@ -76,6 +77,29 @@ export default defineUserConfig<DefaultThemeOptions>({
                         placeholder: '搜索',
                     },
                 },
+            },
+        ],
+        [
+            '@vuepress/register-components',
+            {
+                componentsDir: path.resolve(__dirname, './components'),
+            },
+        ],
+        [
+            '@vuepress/container',
+            {
+                type: 'authorization',
+                locales: {
+                    '/': {
+                        defaultInfo: 'Authorization required',
+                    },
+                    '/zh/': {
+                        defaultInfo: '提示',
+                    },
+                },
+                before: (info: string): string =>
+                    `<div class="custom-container tip authorization">${info ? `<p class="custom-container-title">${info}</p>` : ''}`,
+                after: (): string => '<p><small>All authorization requests require you to first be <router-link to="#authentication">authenticated</router-link>.</small></p></div>\n'
             },
         ],
     ],

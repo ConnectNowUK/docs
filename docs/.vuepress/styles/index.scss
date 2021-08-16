@@ -3,3 +3,13 @@
   --c-brand: #2a6bf9;
   --c-brand-light: #0642c6; // is actually darker
 }
+
+.custom-container.authorization {
+  border-color: var(--c-tip-text);
+  background-color: var(--c-tip-bg);
+  color: var(--c-tip-text);
+  border-left-width: .5rem;
+  border-left-style: solid;
+  padding: .1rem 1.5rem;
+  margin: 1rem 0;
+}

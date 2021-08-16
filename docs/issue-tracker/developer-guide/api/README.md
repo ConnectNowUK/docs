@@ -67,8 +67,8 @@ Sample response:
 
 ### Create a issue
 
-::: tip Authentication
-User must be authenticated and have access to each company from the submitted category ids.
+::: authorization
+You must have access to each company from the submitted category ids.
 :::
 
 ```http:no-line-numbers
@@ -118,8 +118,8 @@ Sample response:
 
 ### Edit a single issue
 
-::: tip Authentication
-User must be authenticated and have access to each company in the issue category ids. If updating category ids, the user must additionally have access/permission for the new category ids submitted.
+::: authorization
+You must have access to each company in the issue category ids. If updating category ids, you must additionally have access/permission for any new category ids submitted.
 :::
 
 ::: tip
@@ -139,7 +139,7 @@ PUT /api/issues/{issue-id}
 
 ### Close a single issue
 
-::: tip Authentication
+::: authorization
 User must be authenticated and have access to each company in the issue category ids.
 :::
 
@@ -157,7 +157,7 @@ POST /api/issues/{issue-id}/close
 
 ### Delete a single issue
 
-::: tip Authentication
+::: authorization
 User must be authenticated and have access to each company in the issue category ids.
 :::
 
@@ -208,7 +208,7 @@ GET /api/categories
 
 ### Create a category
 
-::: tip Authentication
+::: authorization
 User must be authenticated and have access to the company.
 :::
 
@@ -233,7 +233,7 @@ Sample response:
 
 ### Edit a single category
 
-::: tip Authentication
+::: authorization
 User must be authenticated and have access to the company that the category belongs to.
 :::
 
@@ -247,7 +247,7 @@ PUT /api/categories/{category-id}
 
 ### Delete a single category
 
-::: tip Authentication
+::: authorization
 User must be authenticated and have access to the company that the category belongs to.
 :::
 
@@ -269,8 +269,8 @@ GET /api/companies
 
 ### Create a company
 
-::: tip Authentication
-User must be authenticated.
+::: authorization
+You must be authorized to access this resource
 :::
 
 ```http:no-line-numbers
@@ -293,7 +293,7 @@ Sample response:
 
 ### Edit a single company
 
-::: tip Authentication
+::: authorization
 User must be authenticated and have access to the company.
 :::
 
@@ -307,7 +307,7 @@ PUT /api/companies/{company-id}
 
 ### Delete a single company
 
-::: tip Authentication
+::: authorization
 User must be authenticated and have access to the company.
 :::
 
@@ -319,7 +319,7 @@ Authorization: user must be authenticated and have access to the specified compa
 
 ## Webhooks
 
-::: tip Authentication
+::: authorization
 User must be authenticated for all webhook endpoints and methods.
 :::
 

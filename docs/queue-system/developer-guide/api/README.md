@@ -28,9 +28,11 @@ See: [API Philosophy - status codes](/api-philosophy.md#response-status-codes)
 
 ### Get all public companies
 
-::: tip Authentication
-User must be authenticated.
-:::
+<AuthAuthorization>
+    <template v-slot:authorization>
+    If you do not have god-permissions, you will only be able to list all public companies you are a member of.
+    </template>
+</AuthAuthorization>
 
 ```http:no-line-numbers
 GET /api/companies
@@ -42,9 +44,10 @@ GET /api/companies
 
 ### Create a company
 
-::: tip Authentication
-User must be authenticated.
-:::
+<AuthAuthorization>
+    <template v-slot:authorization>
+    </template>
+</AuthAuthorization>
 
 ```http:no-line-numbers
 POST /api/companies
@@ -76,7 +79,7 @@ Sample response:
 
 ### Edit a single company
 
-::: tip Authentication
+::: authorization
 User must be authenticated and have access to the company.
 :::
 
@@ -92,7 +95,7 @@ PUT /api/companies/{company-id}
 
 ### Delete a single company
 
-::: tip Authentication
+::: authorization
 User must be authenticated and have access to the company.
 :::
 
@@ -104,7 +107,7 @@ DELETE /api/companies/{company-id}
 
 ### Get all company users
 
-::: tip Authentication
+::: authorization
 User must be authenticated. In addition, you must pass `company_ids` to companies you have access to in order to list the users in those companies.
 :::
 
@@ -148,7 +151,7 @@ Sample response:
 
 ### Get a single company user
 
-::: tip Authentication
+::: authorization
 User must be authenticated and have the right to list the user (belonging to the same company).
 :::
 
@@ -175,7 +178,7 @@ Sample response:
 ```
 ### Create a single company user
 
-::: tip Authentication
+::: authorization
 User must be authenticated and have rights for the company.
 :::
 
@@ -209,9 +212,10 @@ The state of a given user in a company (a company user) determines if they are a
 
 ### Get all queues
 
-::: tip Authentication
-User must be authenticated.
-:::
+<AuthAuthorization>
+    <template v-slot:authorization>
+    </template>
+</AuthAuthorization>
 
 ```http:no-line-numbers
 GET /api/queues
@@ -238,9 +242,10 @@ GET /api/queues
 
 ### Get a single queue
 
-::: tip Authentication
-User must be authenticated.
-:::
+<AuthAuthorization>
+    <template v-slot:authorization>
+    </template>
+</AuthAuthorization>
 
 ```http:no-line-numbers
 GET /api/queues/{queue-id}
@@ -259,9 +264,10 @@ Sample response:
 
 ### Create a new queue
 
-::: tip Authentication
-User must be authenticated.
-:::
+<AuthAuthorization>
+    <template v-slot:authorization>
+    </template>
+</AuthAuthorization>
 
 ```http:no-line-numbers
 POST /api/queues
@@ -311,9 +317,10 @@ The queues that a given query is on.
 
 ### Get all skills
 
-::: tip Authentication
-User must be authenticated.
-:::
+<AuthAuthorization>
+    <template v-slot:authorization>
+    </template>
+</AuthAuthorization>
 
 ```http:no-line-numbers
 GET /api/skills
@@ -343,9 +350,10 @@ Sample response:
 
 ### Get a single skill
 
-::: tip Authentication
-User must be authenticated.
-:::
+<AuthAuthorization>
+    <template v-slot:authorization>
+    </template>
+</AuthAuthorization>
 
 ```http:no-line-numbers
 GET /api/skills/{skill-id}
@@ -362,9 +370,10 @@ Sample response:
 
 ### Create a single skill
 
-::: tip Authentication
-User must be authenticated.
-:::
+<AuthAuthorization>
+    <template v-slot:authorization>
+    </template>
+</AuthAuthorization>
 
 ```http:no-line-numbers
 POST /api/skills
@@ -379,9 +388,15 @@ POST /api/skills
 
 ### Get a single user
 
-::: tip Authentication
-User must be authenticated.
-:::
+<AuthAuthorization>
+    <template v-slot:authorization>
+    </template>
+</AuthAuthorization>
+
+<AuthAuthorization>
+    <template v-slot:authorization>
+    </template>
+</AuthAuthorization>
 
 ```http:no-line-numbers
 GET /api/users/{user-id}
@@ -389,7 +404,7 @@ GET /api/users/{user-id}
 
 | Parameter | Type | Rules | Default | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `with` | `array` | Can be any combination of: `companies`, `companies.skills`, `companies.queues` | - | What related objects to append to the JSON response |
+| `with` | `array` | Can be any combination of: `companies`, `skills`, `queues` | - | What related objects to append to the JSON response |
 
 Sample response:
 ```json
@@ -408,18 +423,21 @@ Sample response:
   "queues": [
     {
         "id": 1,
-        "name": "German MacOS Support"
+        "name": "German MacOS Support",
+        "company_id": 1
         ...
     }
   ],
   "skills": [
     {
         "id": 2,
-        "name": "German"
+        "name": "German",
+        "company_id": 1
     },
     {
         "id": 3,
-        "name": "MacOS Support"
+        "name": "MacOS Support",
+        "company_id": 1
     },
     ...
   ],
