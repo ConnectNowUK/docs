@@ -22,8 +22,6 @@ See: [API Philosophy - status codes](/api-philosophy.html#response-status-codes)
 
 ## Blacklist hours of operation
 
-## Common blacklist hours
-
 ## Companies
 
 ### Get all public companies
