@@ -12,7 +12,7 @@ This documentation is a work in progress.
 
 ## Use cases and intended audience
 
-The queue system provides a way for support centers to route incoming queries to the correct agents based on the agents skills, effectively creating a skill-based routing.
+The queue system provides a way for support centers to route incoming queries to the correct users (users) based on the users skills, effectively creating a skill-based routing.
 
 ## Benefits
 
@@ -42,16 +42,16 @@ In addition to the normal queues that a company can create within their organiza
 
 #### Personal queues
 
-Each user in a company gets a personal queue that they can always respond to. This allows agents to transfer queries to people directly, if need be. These queues have no skills associated with them and can only belong to one user.
+Each user in a company gets a personal queue that they can always respond to. This allows users to transfer queries to people directly, if need be. These queues have no skills associated with them and can only belong to one user.
 
 #### Password protected queues
 
 Some queues are password protected so that the general public can not just join them. A common use case for these types of queues are for VIP queues.
 
-In addition, personal queues are automatically password protected, preventing people from launching queries directly at specific agents.
+In addition, personal queues are automatically password protected, preventing people from launching queries directly at specific users.
 
-## Agent skill levels (priorities)
+## User skill levels (priorities)
 
-Depending on how proficient an agent is in a given skill, they will see the queued query automatically after a set delay as defined by the queue.
+Depending on how proficient an user is in a given skill, they will see the queued query automatically after a set delay as defined by the queue.
 
-For example take the IT Support queue that has a skill-level delay of 30 seconds. When a new query comes in to the queue, all available agents with matching skills at a skill level 1 will immediately see the new incoming query. If they don't respond within the defined time (in this case 30 seconds), available agents with the right skills but at a skill level of 2 (so less proficient) will also start seeing the incoming query.
+For example take the IT Support queue that has a skill-level delay of 30 seconds. When a new query comes in to the queue, all available users with matching skills at a skill level 1 will immediately see the new incoming query. If they don't respond within the defined time (in this case 30 seconds), available users with the right skills but at a skill level of 2 (so less proficient) will also start seeing the incoming query.

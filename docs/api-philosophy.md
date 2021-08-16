@@ -52,9 +52,10 @@ ConnectNow APIs return the following status codes in its API:
 | 201 | `CREATED` | The resource has been successfully created
 | 401 | `UNAUTHENTICATED` | Your API token, or the way you are passing it, is incorrect
 | 403 | `FORBIDDEN` | You are not allowed to do the action
+| 404 | `NOT FOUND` | The resource you are looking for does not exist
 | 405 | `METHOD NOT ALLOWED` | You are not allowed to use a given HTTP method (GET, POST, PUT, DELETE, or others)
 | 422 | `BAD REQUEST` | Your request is malformed, data required is missing and/or incorrect
-| 404 | `NOT FOUND` | The resource you are looking for does not exist
+| 429 | `TOO MANY REQUESTS` | You have exceeded the rate-limiter limits
 | 500 | `INTERNAL SERVER ERROR` | There was a problem with the server - if you encounter this one, please let us know
 
 ## Paginated responses

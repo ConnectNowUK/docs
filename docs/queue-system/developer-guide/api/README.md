@@ -125,27 +125,14 @@ Sample response:
     "created_at": "2021-07-05T09:31:38.000000Z",
     "accepted_at": "2021-07-05T09:36:11.000000Z",
     "invited_email": "hans.schmidt@domain.com",
-    "max_number_of_ongoing_objects_handled": 3,
+    "max_number_of_ongoing_queries_handled": 3,
     "is_auto_max_number_handled": false,
     "ability_to_pick_from_queue": true,
     "is_auto_ability_to_pick_from_queue": false,
     "role": "agent",
     "is_active": true,
   },
-  {
-    "id": 2,
-    "user_id": 2,
-    "company_id": 1,
-    "created_at": "2021-07-05T09:31:38.000000Z",
-    "accepted_at": "2021-07-05T09:36:11.000000Z",
-    "invited_email": "priti.chandri@domain.com",
-    "max_number_of_ongoing_objects_handled": 1,
-    "is_auto_max_number_handled": true,
-    "ability_to_pick_from_queue": false,
-    "is_auto_ability_to_pick_from_queue": true,
-    "role": "agent",
-    "is_active": false,
-  },
+  ...
 ]
 ```
 
@@ -168,7 +155,7 @@ Sample response:
   "created_at": "2021-07-05T09:31:38.000000Z",
   "accepted_at": "2021-07-05T09:36:11.000000Z",
   "invited_email": "hans.schmidt@domain.com",
-  "max_number_of_ongoing_objects_handled": 3,
+  "max_number_of_ongoing_queries_handled": 3,
   "is_auto_max_number_handled": false,
   "ability_to_pick_from_queue": true,
   "is_auto_ability_to_pick_from_queue": false,
@@ -278,7 +265,7 @@ POST /api/queues
 | `name` | `string` | Text | :white_check_mark: | - | The name of the queue |
 | `company_id` | `integer` | A valid company ID | :white_check_mark: | - | The ID of the company this queue belongs to |
 | `password` | `string` | TODO: password rules | - | - | The password for this queue (see: [Concept Overview - password protected queues](../../user-guide/concept-overview.html#password-protected-queues])) |
-| `priority_delay` | `number` | A valid integer | - | - | Time delay in seconds for a query to escalate to additional agents (see: [Concept Overview - queue routing logic](../../user-guide/concept-overview.html#queue-routing-logic]))  |
+| `priority_delay` | `number` | A valid integer | - | - | Time delay in seconds for a query to escalate to additional users (see: [Concept Overview - queue routing logic](../../user-guide/concept-overview.html#queue-routing-logic]))  |
 | `is_active` | `boolean` |  `true` or `false` | :white_check_mark: | `true` | Whether this queue is active or not |
 | `skill_ids` | `array` |  Array of valid skill IDs | - | - | An array of ID's of skills that the queue requires |
 
@@ -286,7 +273,7 @@ POST /api/queues
 
 Note: queues with a set `company_user_id` cannot be deleted. To delete such queues, remove the user from the company.
 
-## Query
+## Queries
 
 ### Create a new query
 
@@ -416,7 +403,7 @@ Sample response:
   "companies": [
     {
         "id": 1,
-        "name": "Company 1"
+        "name": "Company 1",
         ...
     }
   ],
@@ -424,7 +411,7 @@ Sample response:
     {
         "id": 1,
         "name": "German MacOS Support",
-        "company_id": 1
+        "company_id": 1,
         ...
     }
   ],

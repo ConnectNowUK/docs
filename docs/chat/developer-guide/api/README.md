@@ -22,8 +22,8 @@ Because of the nature of Chat and specifically the ability to converse without h
 Also see: [API Philosophy - authentication](/api-philosophy.md#authentication)
 
 ### The two types of tokens
-1. API tokens are usual tokens that you use to authenticate most API requests.
-2. Chat-user tokens are tokens that are scoped to a user in a given chat, and are required to interact as a given user in a given chat.
+1. API tokens are usual tokens that you use to authenticate most API requests. These follow our [API philosophy on authentication](/api-philosophy.md#authentication) using `api_token`
+2. Chat-user tokens are tokens that are scoped to a user in a given chat, and are required to interact as a given user in a given chat. These follow our [API philosophy on authentication](/api-philosophy.md#authentication), but use `chat_user_token` instead
 
 ## Response Status Codes
 
