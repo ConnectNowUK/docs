@@ -6,6 +6,10 @@ description: Developer Guide for people using ConnectNow Queue System
 # ConnectNow Queue Concept Overview
 Welcome to the Queue System developer-guide API docs!
 
+::: tip IMPORTANT
+Make sure to familiarize yourself with the [API philosophy](/api-philosophy.html) before proceeding with this guide.
+:::
+
 ::: warning
 This documentation is a work in progress.
 :::

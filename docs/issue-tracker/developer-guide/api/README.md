@@ -10,7 +10,10 @@ API base:
 ```http:no-line-numbers
 https://issuetracker.connectnow.org.uk
 ```
-Pass an "accept" header with "application/json" for all API requests.
+
+::: tip IMPORTANT
+Make sure to familiarize yourself with the [API philosophy](/api-philosophy.html) before proceeding with this guide.
+:::
 
 ## Authentication
 
