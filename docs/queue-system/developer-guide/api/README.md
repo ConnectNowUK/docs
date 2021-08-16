@@ -14,20 +14,11 @@ This documentation is a work in progress.
 
 For routes that require authorization, you need to be authenticated. Create a personal access token for your account on the website, and pass it as a bearer token.
 
+Also see: [API Philosophy - authentication](/api-philosophy.html#authentication)
+
 ## Response Status Codes
 
-Issue Tracker returns the following status codes in its API:
-
-| Status Code | Description |
-| :--- | :--- |
-| 200 | `OK` |
-| 201 | `CREATED` |
-| 401 | `UNAUTHENTICATED` |
-| 403 | `FORBIDDEN` |
-| 405 | `METHOD NOT ALLOWED` |
-| 422 | `BAD REQUEST` |
-| 404 | `NOT FOUND` |
-| 500 | `INTERNAL SERVER ERROR` |
+See: [API Philosophy - status codes](/api-philosophy.html#response-status-codes)
 
 ## Blacklist hours of operation
 
