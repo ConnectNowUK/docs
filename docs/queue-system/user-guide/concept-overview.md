@@ -26,6 +26,10 @@ The queue system provides a way for support centers to route incoming queries to
 
 A user of the Queue System in your company is a person that is either an agent, a staffing manager, or a company manager. For the purposes of this guide, people asking the questions (e.g. your customers) are not considered "users".
 
+### Query
+
+An incoming support request; includes the link to where the query is being discussed (e.g. ConnectNow Chat, Zoom, or other).
+
 ## Queue routing logic
 
 Each user has zero, one, or more skills assigned to them by a user with manager permissions. As an example, a user may be assigned the skills "Apple Hardware", "German", "English", "Printer Support". With these skills, it is trivial to see that this example-user can speak both German and English, and can help with both printers and physical devices made by the Apple company.

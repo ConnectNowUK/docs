@@ -148,6 +148,8 @@ When creating a user, an additional personal queue is also created. See: [Concep
 
 ## Company user states
 
+The state of a given user in a company (a company user) determines if they are available to get and answer new queries.
+
 ## Hours of operation
 
 ## Queues
@@ -209,7 +211,11 @@ POST /api/queues
 
 ## Query notes
 
+You can add additional notes to each query that can are visible to all users responding to a query, regardless of the queue.
+
 ## Query queues
+
+The queues that a given query is on.
 
 ## Ratings
 
