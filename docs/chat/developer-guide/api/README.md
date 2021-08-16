@@ -17,7 +17,7 @@ Make sure to familiarize yourself with the [API philosophy](/api-philosophy.html
 
 ## Authentication
 
-For routes that require authorization, you need to be authenticated. Create a personal access token for your account on the website, and pass it as a bearer token.
+Because of the nature of Chat and specifically the ability to converse without having an account, two types of tokens exist for authentication depending on what you're trying to access.
 
 Also see: [API Philosophy - authentication](/api-philosophy.html#authentication)
 
