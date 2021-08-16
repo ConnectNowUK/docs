@@ -12,16 +12,16 @@ https://issuetracker.connectnow.org.uk
 ```
 
 ::: tip IMPORTANT
-Make sure to familiarize yourself with the [API philosophy](/api-philosophy.html) before proceeding with this guide.
+Make sure to familiarize yourself with the [API philosophy](/api-philosophy.md) before proceeding with this guide.
 :::
 
 ## Authentication
 
-See: [API Philosophy - authentication](/api-philosophy.html#authentication)
+See: [API Philosophy - authentication](/api-philosophy.md#authentication)
 
 ## Response Status Codes
 
-See: [API Philosophy - status codes](/api-philosophy.html#response-status-codes)
+See: [API Philosophy - status codes](/api-philosophy.md#response-status-codes)
 
 ## Issues
 
@@ -33,7 +33,7 @@ GET /api/issues
 
 | Parameter | Type | Rules | Default | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `with` | `array` | Can be any combination of: `categories`, `categories.company`, `events`| - | What to append to the JSON response |
+| `with` | `array` | Can be any combination of: `categories`, `categories.company`, `events`| - | What related objects to append to the JSON response |
 | `company_ids` | `array` | Must be an existing ID | - | Filter by the company IDs |
 | `category_ids` | `array` | Must be an existing ID | - | Filter by category IDs |
 | `after` | `string` | Date formatted as YYYY-MM-DD | - | Only only issues after this date |
@@ -75,12 +75,12 @@ User must be authenticated and have access to each company from the submitted ca
 POST /api/issues
 ```
 
-| Parameter | Type | Rules | Required | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `category_ids` | `array` | Must contain existing IDs | :white_check_mark: |  Category IDs the issue belongs to |
-| `name` | `string` | Text | :white_check_mark: | The name of the issue |
-| `description` | `string` | Text | :white_check_mark: | A description of the current status/situation of the issue |
-| `severity ` | `string` | Must be one of: `critical`, `important`, `info` | :white_check_mark: | The level of severity |
+| Parameter | Type | Rules | Required | Default | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- 
+| `category_ids` | `array` | Must contain existing IDs | :white_check_mark: | - | Category IDs the issue belongs to |
+| `name` | `string` | Text | :white_check_mark: | - | The name of the issue |
+| `description` | `string` | Text | :white_check_mark: | - | A description of the current status/situation of the issue |
+| `severity ` | `string` | Must be one of: `critical`, `important`, `info` | :white_check_mark: | - | The level of severity |
 
 
 Sample response:
@@ -102,7 +102,7 @@ GET /api/issues/{issue-id}
 
 | Parameter | Type | Rules | Default | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `with` | `array` | Can be any combination of: `categories`, `categories.company`, `events`| - | What to append to the JSON response |
+| `with` | `array` | Can be any combination of: `categories`, `categories.company`, `events`| - | What related objects to append to the JSON response |
 
 Sample response:
 ```json
@@ -130,12 +130,12 @@ If the issue is already closed, you will receive a 403 response.
 PUT /api/issues/{issue-id}
 ```
 
-| Parameter | Type | Rules | Required | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `category_ids` | `array` | Must contain existing IDs | - |  Category IDs the issue belongs to. If parameter is passed, ID's will be synced, meaning those not present in the request array will be removed from the issue |
-| `name` | `string` | Text | - | The name of the issue |
-| `description` | `string` | Text | :white_check_mark: | A description of the current status/situation of the issue |
-| `severity ` | `string` | Must be one of: `critical`, `important`, `info` | - | The level of severity |
+| Parameter | Type | Rules | Required | Default | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `category_ids` | `array` | Must contain existing IDs | - | - | Category IDs the issue belongs to. If parameter is passed, ID's will be synced, meaning those not present in the request array will be removed from the issue |
+| `name` | `string` | Text | - | - | The name of the issue |
+| `description` | `string` | Text | :white_check_mark: | - | A description of the current status/situation of the issue |
+| `severity ` | `string` | Must be one of: `critical`, `important`, `info` | - | - | The level of severity |
 
 ### Close a single issue
 
@@ -151,8 +151,8 @@ If the issue is already closed, you will receive a 403 response.
 POST /api/issues/{issue-id}/close
 ```
 
-| Parameter | Type | Rules | Required | Description |
-| :--- | :--- | :--- | :--- | :--- |
+| Parameter | Type | Rules | Required | Default | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | `description` | `string` | Text | :white_check_mark: | A description of the current situation of the issue |
 
 ### Delete a single issue
@@ -177,9 +177,9 @@ To subscribe to categories instead: use `categories` in place of `issues` in thi
 POST /api/issues/{issue-id}/subscriptions
 ```
 
-| Parameter | Type | Rules | Required | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `email` | `string` | A valid email address | :white_check_mark: |  Category IDs the issue belongs to |
+| Parameter | Type | Rules | Required | Default | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `email` | `string` | A valid email address | :white_check_mark: | - | Category IDs the issue belongs to |
 
 If the subscription does not exist, it will be created and a confirmation email will be sent to the user. The API returns a 201 CREATED status code.
 
@@ -203,7 +203,7 @@ GET /api/categories
 
 | Parameter | Type | Rules | Default | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `with` | `array` | Can be any combination of: `company`, `issues` | - | What to append to the JSON response |
+| `with` | `array` | Can be any combination of: `company`, `issues` | - | What related objects to append to the JSON response |
 | `company_ids` | `array` | Must be an existing ID | - | Filter by the company IDs |
 
 ### Create a category
@@ -216,10 +216,10 @@ User must be authenticated and have access to the company.
 POST /api/categories
 ```
 
-| Parameter | Type | Rules | Required | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `name` | `string` | Text | :white_check_mark: | The name of the category |
-| `company_id ` | `string` | Must be existing company id | :white_check_mark: | The company ID this category belongs to |
+| Parameter | Type | Rules | Required | Default | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `name` | `string` | Text | :white_check_mark: | - | The name of the category |
+| `company_id ` | `string` | Must be an existing company ID | :white_check_mark: | - | The company ID this category belongs to |
 
 ### Get a single category
 
@@ -241,9 +241,9 @@ User must be authenticated and have access to the company that the category belo
 PUT /api/categories/{category-id}
 ```
 
-| Parameter | Type | Rules | Required | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `name` | `string` | Text | :white_check_mark: | The name of the category |
+| Parameter | Type | Rules | Required | Default | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `name` | `string` | Text | :white_check_mark: | - | The name of the category |
 
 ### Delete a single category
 
@@ -265,7 +265,7 @@ GET /api/companies
 
 | Parameter | Type | Rules | Default | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `with` | `array` | Can be any combination of: `categories`, `issues` | - | What to append to the JSON response |
+| `with` | `array` | Can be any combination of: `categories`, `issues` | - | What related objects to append to the JSON response |
 
 ### Create a company
 
@@ -277,9 +277,9 @@ User must be authenticated.
 POST /api/companies
 ```
 
-| Parameter | Type | Rules | Required | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `name` | `string` | Text | :white_check_mark: | The name of the category |
+| Parameter | Type | Rules | Required | Default | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `name` | `string` | Text | :white_check_mark: | - | The name of the category |
 
 ### Get a single company
 
@@ -301,9 +301,9 @@ User must be authenticated and have access to the company.
 PUT /api/companies/{company-id}
 ```
 
-| Parameter | Type | Rules | Required | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `name` | `string` | Text | :white_check_mark: | The name of the category |
+| Parameter | Type | Rules | Required | Default | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `name` | `string` | Text | :white_check_mark: | - | The name of the category |
 
 ### Delete a single company
 
@@ -335,10 +335,10 @@ GET /api/webhooks
 POST /api/webhooks
 ```
 
-| Parameter | Type | Rules | Required | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `url` | `string` | Valid URL, unique | :white_check_mark: | The webhook url |
-| `description` | `string` | Text | - | The description of what the webhook is for |
+| Parameter | Type | Rules | Required | Default | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `url` | `string` | Valid URL, unique | :white_check_mark: | - | The webhook url |
+| `description` | `string` | Text | - | - | The description of what the webhook is for |
 
 ### Get a single webhook
 
@@ -356,9 +356,9 @@ Sample response:
 PUT /api/webhooks/{webhook-id}
 ```
 
-| Parameter | Type | Rules | Required | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `name` | `string` | Text | :white_check_mark: | The name of the category |
+| Parameter | Type | Rules | Required | Default | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `name` | `string` | Text | :white_check_mark: | - | The name of the category |
 
 ### Delete a single webhook
 

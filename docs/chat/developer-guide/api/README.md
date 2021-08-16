@@ -12,14 +12,14 @@ https://chat-api.connectnow.org.uk
 ```
 
 ::: tip IMPORTANT
-Make sure to familiarize yourself with the [API philosophy](/api-philosophy.html) before proceeding with this guide.
+Make sure to familiarize yourself with the [API philosophy](/api-philosophy.md) before proceeding with this guide.
 :::
 
 ## Authentication
 
 Because of the nature of Chat and specifically the ability to converse without having an account, two types of tokens exist for authentication depending on what you're trying to access.
 
-Also see: [API Philosophy - authentication](/api-philosophy.html#authentication)
+Also see: [API Philosophy - authentication](/api-philosophy.md#authentication)
 
 ### The two types of tokens
 1. API tokens are usual tokens that you use to authenticate most API requests.
@@ -27,7 +27,7 @@ Also see: [API Philosophy - authentication](/api-philosophy.html#authentication)
 
 ## Response Status Codes
 
-See: [API Philosophy - status codes](/api-philosophy.html#response-status-codes)
+See: [API Philosophy - status codes](/api-philosophy.md#response-status-codes)
 
 ## Current user
 
@@ -161,10 +161,10 @@ This endpoint is used to exchange a valid auth-code for a chat-user token, which
 POST /chats/{chat-id}/users/get-token
 ```
 
-| Parameter | Type | Rules | Required | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `email` | `email` | A valid email address | :white_check_mark: |  Email of the person requesting a token |
-| `auth-code` | `int` | A valid auth code | :white_check_mark: |  The auth code sent to the persons email |
+| Parameter | Type | Rules | Required | Default | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `email` | `email` | A valid email address | :white_check_mark: | - |  Email of the person requesting a token |
+| `auth-code` | `int` | A valid auth code | :white_check_mark: | - |  The auth code sent to the persons email |
 
 ## Chat password
 
