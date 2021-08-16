@@ -22,7 +22,7 @@ To authenticate, you can either pass a `api_token` as a query parameter: e.g. `G
 
 ### Via the request payload
 
-You can post the API token as part of the actual request payload, especially when making `POST` requests.
+You can post the API token as part of the actual request payload, especially when making `POST` requests. The form parameter is `api_token`.
 
 ### Via headers
 
