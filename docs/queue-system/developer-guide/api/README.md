@@ -135,12 +135,14 @@ POST /api/company-users
 | `user_id` | `string` | Text | - | The ID of the user this company belongs to (TODO: note down why user_id is nullable (invite link)) |
 | `company_id` | `integer` | A valid company ID | :white_check_mark: | The ID of the company this company user belongs to |
 | `invited_email` | `integer` | A valid email address | :white_check_mark: | The email of the invited user |
-| `max_number_of_objects_handled` | `integer` | A valid integer | :white_check_mark: | The number of simultaneous queued objects this user can handle |
+| `max_number_of_queries_handled` | `integer` | A valid integer | :white_check_mark: | The number of simultaneous queued queries this user can handle |
 | `is_auto_max_number_handled` | `boolean` | `true` or `false` | :white_check_mark: | Whether this user's simultaneous handle limit is manually set, or set to the automatic system setting (TODO: gamification / global defaults) |
-| `ability_to_pick_from_queue` | `boolean` |  `true` or `false` | :white_check_mark: | Whether this company user can choose which objects to answer from the queue |
-| `is_auto_ability_to_pick_from_queue` | `boolean` | `true` or `false` | :white_check_mark: | Whether this user's ability to choose which queued object they answer is manually set, or set to the automatic system setting (TODO: gamification / global defaults |
+| `ability_to_pick_from_queue` | `boolean` |  `true` or `false` | :white_check_mark: | Whether this company user can choose which queries to answer from the queue |
+| `is_auto_ability_to_pick_from_queue` | `boolean` | `true` or `false` | :white_check_mark: | Whether this user's ability to choose which query they answer is manually set, or set to the automatic system setting (TODO: gamification / global defaults |
 | `role` | `integer` | A valid company ID | :white_check_mark: | The access level for this company user |
 | `is_active` | `integer` | A valid company ID | :white_check_mark: | Whether this company user is active or not |
+
+When creating a user, an additional personal queue is also created. See: [Concept Overview - personal queues](../../user-guide/concept-overview.html#personal-queues])).
 
 ## Company user skills
 
@@ -185,13 +187,12 @@ POST /api/queues
 | `name` | `string` | Text | :white_check_mark: | The name of the category |
 | `company_id` | `integer` | A valid company ID | :white_check_mark: | The ID of the company |
 | `password` | `string` | TODO: password rules | - | The password for this queue (see: [Concept Overview - password protected queues](../../user-guide/concept-overview.html#password-protected-queues])) |
-| `company_user_id` | `integer` | A valid company user ID | - | If set, this queue is a personal queue belonging to the specified company user (see: [Concept Overview - personal queues](../../user-guide/concept-overview.html#personal-queues])) |
-| `priority_delay` | `number` | A valid integer | - | Time delay in seconds for a queued object to escalate to additional agents (see: [Concept Overview - queue routing logic](../../user-guide/concept-overview.html#queue-routing-logic]))  |
+| `priority_delay` | `number` | A valid integer | - | Time delay in seconds for a query to escalate to additional agents (see: [Concept Overview - queue routing logic](../../user-guide/concept-overview.html#queue-routing-logic]))  |
 | `is_active` | `boolean` |  `true` or `false` | - | Whether this company is active or not |
 
-## Queueable object
+## Query
 
-### Create a new queueable object
+### Create a new query
 
 ::: tip Authentication
 User must be authenticated.
@@ -206,9 +207,9 @@ POST /api/queues
 | `name` | `string` | Text | :white_check_mark: | The name of the category |
 | `queue_id` | `integer` | A valid company ID | :white_check_mark: | The ID of the company |
 
-## Queued object notes
+## Query notes
 
-## Queueable object queues
+## Query queues
 
 ## Ratings
 
