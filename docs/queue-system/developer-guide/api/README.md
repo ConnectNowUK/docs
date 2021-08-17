@@ -302,7 +302,7 @@ POST /api/queries
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `source` | `string` | String with no whitespace | :white_check_mark: | - | A link, phone number, or other reference to where the query is |
 | `email` | `string` | A valid email address | :white_check_mark: | - | The email address of the person seeking assistance |
-| `is_link` | `boolean` | `true` or `false` | :white_check_mark: | - | Whether this query is accessible via a hyperlink or not. E.g http(s) / mailto / tel |
+| `is_link` | `boolean` | `true` or `false` | :white_check_mark: | `true` | Whether this query is accessible via a hyperlink or not. E.g http(s) / mailto / tel |
 | `name` | `string` | - | :white_check_mark: | - | The name of the person seeking assistance |
 | `surname` | `string` | - | - | - | The surname of the person seeking assistance |
 | `queue_id` | `integer` | A valid queue ID | :white_check_mark: | - | The ID of the queue this query belongs to |
