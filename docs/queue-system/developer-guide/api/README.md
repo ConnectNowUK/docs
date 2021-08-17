@@ -127,7 +127,7 @@ Sample response:
     "created_at": "2021-07-05T09:31:38.000000Z",
     "accepted_at": "2021-07-05T09:36:11.000000Z",
     "invited_email": "hans.schmidt@domain.com",
-    "max_number_of_ongoing_queries_handled": 3,
+    "max_ongoing_queries_handled": 3,
     "is_auto_max_number_handled": false,
     "ability_to_pick_from_queue": true,
     "is_auto_ability_to_pick_from_queue": false,
@@ -141,7 +141,7 @@ Sample response:
     "created_at": "2021-07-10T13:12:22.000000Z",
     "accepted_at": "2021-07-10T13:13:50.000000Z",
     "invited_email": "sakura.watanabe@domain.com",
-    "max_number_of_ongoing_queries_handled": 1,
+    "max_ongoing_queries_handled": 1,
     "is_auto_max_number_handled": true,
     "ability_to_pick_from_queue": false,
     "is_auto_ability_to_pick_from_queue": true,
@@ -171,7 +171,7 @@ Sample response:
   "created_at": "2021-07-05T09:31:38.000000Z",
   "accepted_at": "2021-07-05T09:36:11.000000Z",
   "invited_email": "hans.schmidt@domain.com",
-  "max_number_of_ongoing_queries_handled": 3,
+  "max_ongoing_queries_handled": 3,
   "is_auto_max_number_handled": false,
   "ability_to_pick_from_queue": true,
   "is_auto_ability_to_pick_from_queue": false,
@@ -195,7 +195,7 @@ POST /api/company-users
 | `user_id` | `integer` | A valid user ID | - | - | The ID of the user this company belongs to. This is nullable to facilitate inviting a user to the company who is not yet registered |
 | `company_id` | `integer` | A valid company ID | :white_check_mark: | - | The ID of the company this company user belongs to |
 | `invited_email` | `integer` | A valid email address | :white_check_mark: | - | The email of the invited user |
-| `max_number_of_queries_handled` | `integer` | A valid integer | :white_check_mark: | `1` | The number of simultaneous queued queries this user can handle |
+| `max_ongoing_queries_handled` | `integer` | A valid integer | :white_check_mark: | `1` | The number of simultaneous queued queries this user can handle |
 | `is_auto_max_number_handled` | `boolean` | `true` or `false` | :white_check_mark: | `true` | Whether this user's simultaneous handle limit is manually set, or managed by the system. The system may change this value based on the user's performance and achievements.  |
 | `ability_to_pick_from_queue` | `boolean` |  `true` or `false` | :white_check_mark:  | `false` | Whether this company user can choose which queries to answer from the queue |
 | `is_auto_ability_to_pick_from_queue` | `boolean` | `true` or `false` | :white_check_mark:  | `true` | Whether this user's ability to choose which query they answer is manually set, or managed by the system. The system may change this value based on the user's performance and achievements. |
