@@ -17,6 +17,12 @@ Make sure to familiarize yourself with the [API philosophy](/api-philosophy.md) 
 
 ## Authentication
 
+### Getting an API token
+
+See [User Guide - getting tokens](../../user-guide/README.md#issuing-api-tokens)
+
+### Authenticating requests
+
 See: [API Philosophy - authentication](/api-philosophy.md#authentication)
 
 ## Response Status Codes
