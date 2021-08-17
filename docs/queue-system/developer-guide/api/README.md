@@ -412,6 +412,7 @@ Sample response:
   "name": "Hans",
   "surname": "Schmidt",
   "email": "hans.schmidt@domain.com",
+  "avatar_url": "https://image.com/this.jpg",
   "companies": [
     {
         "id": 1,
