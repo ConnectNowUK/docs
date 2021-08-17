@@ -56,8 +56,9 @@ POST /api/companies
 | Parameter | Type | Rules | Required | Default | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `name` | `string` | Text | :white_check_mark: | - | The name of the company |
-| `slug` | `string` | Text, all lower case with no spaces | :white_check_mark: | - | The unique identifying name for this company |
+| `slug` | `string` | Text | :white_check_mark: | - | The unique identifying name for this company (text will be converted to slug) |
 | `logo_url` | `string` | Valid URL to a JPG, PNG, or SVG image | :white_check_mark: | - | A URL to a logo image |
+| `query_expiry_time_in_minutes` | `integer` | Number | - | `60` | The time it takes for a query to expire |
 
 ### Get a single company
 
@@ -92,6 +93,7 @@ PUT /api/companies/{company-id}
 | `name` | `string` | - | :white_check_mark: | - | The name of the company |
 | `slug` | `string` | Text, all lower case with no spaces | - | - | The unique identifying name for this company |
 | `logo_url` | `string` | Valid URL to a JPG, PNG, or SVG image | - | - | A URL to a logo image |
+| `query_expiry_time_in_minutes` | `integer` | Number | - | `60` | The time it takes for a query to expire |
 
 ### Delete a single company
 
