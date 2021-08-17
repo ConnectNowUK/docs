@@ -132,10 +132,10 @@ PUT /api/issues/{issue-id}
 
 | Parameter | Type | Rules | Required | Default | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `category_ids` | `array` | Must contain existing IDs | - | - | Category IDs the issue belongs to. If parameter is passed, ID's will be synced, meaning those not present in the request array will be removed from the issue |
-| `name` | `string` | Text | - | - | The name of the issue |
+| `category_ids` | `array` | Must contain existing IDs | :white_check_mark: | - | Category IDs the issue belongs to. If this parameter is passed, ID's will be synced, meaning those not present in the request array will be removed from the issue |
+| `name` | `string` | Text | :white_check_mark: | - | The name of the issue |
 | `description` | `string` | Text | :white_check_mark: | - | A description of the current status/situation of the issue |
-| `severity ` | `string` | Must be one of: `critical`, `important`, `info` | - | - | The level of severity |
+| `severity ` | `string` | Must be one of: `critical`, `important`, `info` | :white_check_mark: | - | The level of severity |
 
 ### Close a single issue
 
@@ -229,6 +229,13 @@ GET /api/categories/{category-id}
 
 Sample response:
 ```json
+{
+  "id": 1,
+  "name": "IT department",
+  "company_id": 1,
+  "created_at": "2021-07-05T09:31:38.000000Z",
+  "updated_at": "2021-08-17T11:42:25.000000Z"
+}
 ```
 
 ### Edit a single category
@@ -289,6 +296,12 @@ GET /api/companies/{company-id}
 
 Sample response:
 ```json
+{
+  "id": 1,
+  "name": "ConnectNow",
+  "created_at": "2021-07-05T09:31:38.000000Z",
+  "updated_at": "2021-08-17T11:42:25.000000Z"
+}
 ```
 
 ### Edit a single company
@@ -348,6 +361,14 @@ GET /api/webhooks/{webhook-id}
 
 Sample response:
 ```json
+{
+  "id": 1,
+  "user_id": 1,
+  "url": "https:\/\/hooks.slack.com\/workflows\/12345678ABCDEFG",
+  "description": "Slack Workflow webhook",
+  "created_at": "2021-07-27T19:19:09.000000Z",
+  "updated_at": "2021-07-27T19:19:09.000000Z"
+}
 ```
 
 ### Edit a single webhook
@@ -370,18 +391,28 @@ DELETE /api/webhooks/{webhook-id}
 
 #### webhook_created
 
+Sends an event to the user when a webhook is created belonging to their account
+
 #### webhook_deleted
+
+Sends an event to the user when a webhook is deleted that belonged to their account
 
 #### category_subscription_confirmation
 
-Sends event to user when the user subscribes to a category. Includes the subscription confirmation link.
+Sends an event to the user when the user subscribes to a category. Includes the subscription confirmation link.
 
 #### issue_subscription_confirmation
 
-Sends event to user when the user subscribes to an issue. Includes the subscription confirmation link.
+Sends an event to the user when the user subscribes to an issue. Includes the subscription confirmation link.
 
 #### issue_created
 
+Sends an event to the user when an issue is created within a category they are subscribed to.
+
 #### issue_closed
 
+Sends an event to the user when an issue they are subscribed to is closed.
+
 #### issue_updated
+
+Sends an event to the user when an issue they are subscribed to is updated.

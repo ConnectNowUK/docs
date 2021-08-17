@@ -130,8 +130,22 @@ Sample response:
     "ability_to_pick_from_queue": true,
     "is_auto_ability_to_pick_from_queue": false,
     "role": "agent",
-    "is_active": true,
+    "is_active": true
   },
+  {
+    "id": 2,
+    "user_id": 2,
+    "company_id": 1,
+    "created_at": "2021-07-10T13:12:22.000000Z",
+    "accepted_at": "2021-07-10T13:13:50.000000Z",
+    "invited_email": "sakura.watanabe@domain.com",
+    "max_number_of_ongoing_queries_handled": 1,
+    "is_auto_max_number_handled": true,
+    "ability_to_pick_from_queue": false,
+    "is_auto_ability_to_pick_from_queue": true,
+    "role": "agent",
+    "is_active": false
+  }
   ...
 ]
 ```
@@ -160,7 +174,7 @@ Sample response:
   "ability_to_pick_from_queue": true,
   "is_auto_ability_to_pick_from_queue": false,
   "role": "agent",
-  "is_active": true,
+  "is_active": true
 }
 ```
 ### Create a single company user
@@ -215,14 +229,14 @@ GET /api/queues
     "name": "English MacOS Support",
     "company_id": 1,
     "priority_delay": 180,
-    "is_active": true,
+    "is_active": true
   },
   {
     "id": 2,
     "name": "German MacOS Support",
     "company_id": 1,
     "priority_delay": 180,
-    "is_active": true,
+    "is_active": true
   },
 ]
 ```
@@ -245,7 +259,7 @@ Sample response:
   "name": "German MacOS Support",
   "company_id": 1,
   "priority_delay": 180,
-  "is_active": true,
+  "is_active": true
 }
 ```
 
@@ -427,6 +441,6 @@ Sample response:
         "company_id": 1
     },
     ...
-  ],
+  ]
 }
 ```
