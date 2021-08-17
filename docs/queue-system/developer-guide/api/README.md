@@ -177,6 +177,7 @@ Sample response:
   "is_active": true
 }
 ```
+
 ### Create a single company user
 
 ::: authorization
@@ -388,11 +389,6 @@ POST /api/skills
 ## Users
 
 ### Get a single user
-
-<AuthAuthorization>
-    <template v-slot:authorization>
-    </template>
-</AuthAuthorization>
 
 <AuthAuthorization>
     <template v-slot:authorization>
