@@ -77,7 +77,35 @@ Some responses are paginated. You can access additional pages by passing the `pa
 	"to": 15
 }
 ```
+If there is no more next or previous pages, the values will be `null`.
 
 ## Rate limiting
 
 A rate limiter is implemented on all endpoints. Some can be as low as one request per minute, depending on the endpoint. If you exceed a given rate-limiter limit, you will get back a `429` status code. Wait a few minutes before trying again; note that some responses will tell you how much time you have to wait in the response headers.
+
+## Filtering
+
+::: warning
+This is still in active development, and not fully supported. For now we are rolling it out to the queue system.
+:::
+
+Some endpoints using GET support filtering. We are always working on supporting more.
+
+For endpoints that do support filtering and that return a list (e.g. `/api/companies`), you can try to pass additional filtering options.
+
+| Parameter | Type | Rules | Default | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `before` | `date` | A valid date | - | Filter by objects created before or on this date |
+| `after` | `date` | A valid date | - | Filter by objects created on or after this date |
+
+## Expanding objects & appending data
+
+::: warning
+This is still in active development, and not fully supported. Currently some endpoints in the queue system and issue tracker support this.
+:::
+
+Some endpoints using GET support expanding the returned objects. For example, `users` belong to `companies`, so to fetch companies with the users in the response you can append the data when calling the API, like so: `/api/companies?with[]=users`.
+
+You can also further expand expanded objects with dot notation. Assuming that in the above example users also have pets, we can retrieve a 3 nested response with `/api/companies?with[]=users.pets`. You can even go deep multiple levels: `/api/companies?with[]=users.pets.favoriteToys`.
+
+Note that expandable objects are validated when calling the API, so if you expand with an object that doesn't exist or isn't allowed, you will get a [`422 error`](#response-status-codes). Refer to the documentation of each service to see the objects you can expand.

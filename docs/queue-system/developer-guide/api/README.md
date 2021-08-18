@@ -40,7 +40,7 @@ GET /api/companies
 
 | Parameter | Type | Rules | Default | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `with` | `array` | Can be any combination of: `users`, `queues` | - | What related objects to append to the JSON response |
+| `with` | `array` | Can be any combination of: `users`, `queues`, `skills`, `companyUsers` | - | What related objects to append to the JSON response |
 
 ### Create a company
 
@@ -65,6 +65,11 @@ POST /api/companies
 ```http:no-line-numbers
 GET /api/companies/{company-id}
 ```
+
+| Parameter | Type | Rules | Default | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `with` | `array` | Can be any combination of: `users`, `queues`, `skills`, `companyUsers` | - | What related objects to append to the JSON response |
+
 
 Sample response:
 ```json
@@ -291,6 +296,21 @@ POST /api/queues
 Note: queues with a set `company_user_id` cannot be deleted. To delete such queues, remove the user from the company.
 
 ## Queries
+
+### Get all queries
+
+::: authorization
+User must be authenticated and have rights for the company.
+:::
+
+```http:no-line-numbers
+GET /api/queries
+```
+
+| Parameter | Type | Rules | Default | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `with` | `array` | Can be any combination of: `companyUsers`, `queues` | - | What related objects to append to the JSON response |
+
 
 ### Create a new query
 
