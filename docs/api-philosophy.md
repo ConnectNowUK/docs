@@ -93,10 +93,18 @@ Some endpoints using GET support filtering. We are always working on supporting 
 
 For endpoints that do support filtering and that return a list (e.g. `/api/companies`), you can try to pass additional filtering options.
 
+### Filtering by dates
+
 | Parameter | Type | Rules | Default | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `before` | `date` | A valid date | - | Filter by objects created before or on this date |
 | `after` | `date` | A valid date | - | Filter by objects created on or after this date |
+
+Note that most types of dates will work, including `24-12-2021`, or `24th December 2021`.
+
+However, dates in the m/d/y or d-m-y formats are disambiguated by looking at the separator between the various components: if the separator is a slash (/), then the American m/d/y is assumed; whereas if the separator is a dash (-) or a dot (.), then the European d-m-y format is assumed. If, however, the year is given in a two digit format and the separator is a dash (-), the date string is parsed as y-m-d.
+
+To avoid potential ambiguity, it's best to use ISO 8601 (YYYY-MM-DD) dates.
 
 ## Expanding objects & appending data
 
