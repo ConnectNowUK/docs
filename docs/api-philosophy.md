@@ -110,4 +110,6 @@ For example, imagine that `users` belong to `companies`. To fetch companies with
 
 You can also further expand expanded objects with dot notation. Assuming that in the above example users also have pets, we can retrieve a 3 nested response with `/api/companies?with[]=users.pets`. You can even go deep multiple levels: `/api/companies?with[]=users.pets.favoriteToys`.
 
+You can expand multiple objects by including `with` again, like so: `/api/companies?with[]=users&with[]=offices`.
+
 Note that expandable objects are validated when calling the API, so if you expand with an object that doesn't exist or isn't allowed, you will get a [`422 error`](#response-status-codes). Refer to the documentation of each service to see the objects you can expand.
