@@ -81,7 +81,7 @@ If there is no more next or previous pages, the values will be `null`.
 
 ## Rate limiting
 
-A rate limiter is implemented on all endpoints. Some can be as low as one request per minute, depending on the endpoint. If you exceed a given rate-limiter limit, you will get back a `429` status code. Wait a few minutes before trying again; note that some responses will tell you how much time you have to wait in the response headers.
+A rate limiter is implemented on all endpoints. Some can be as low as one request per minute, depending on the endpoint. If you exceed a given rate-limiter limit, you will get back a [`429` status code](#response-status-codes). Wait a few minutes before trying again; note that some responses will tell you how much time you have to wait in the response headers.
 
 ## Filtering
 
@@ -105,6 +105,8 @@ Note that most types of dates will work, including `24-12-2021`, or `24th Decemb
 However, dates in the m/d/y or d-m-y formats are disambiguated by looking at the separator between the various components: if the separator is a slash (/), then the American m/d/y is assumed; whereas if the separator is a dash (-) or a dot (.), then the European d-m-y format is assumed. If, however, the year is given in a two digit format and the separator is a dash (-), the date string is parsed as y-m-d.
 
 To avoid potential ambiguity, it's best to use ISO 8601 (YYYY-MM-DD) dates.
+
+An invalid date passed to either parameter will yield a [`422 error`](#response-status-codes).
 
 ## Expanding objects & appending data
 
