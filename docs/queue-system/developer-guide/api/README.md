@@ -122,6 +122,10 @@ User must be authenticated. In addition, you must pass `company_ids` to companie
 GET /api/company-users
 ```
 
+| Parameter | Type | Rules | Default | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `with` | `array` | Can be any combination of: `user`, `personalQueue`, `company` | - | What related objects to append to the JSON response |
+
 Sample response:
 ```json
 [

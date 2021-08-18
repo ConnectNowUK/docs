@@ -104,7 +104,9 @@ For endpoints that do support filtering and that return a list (e.g. `/api/compa
 This is still in active development, and not fully supported. Currently some endpoints in the queue system and issue tracker support this.
 :::
 
-Some endpoints using GET support expanding the returned objects. For example, `users` belong to `companies`, so to fetch companies with the users in the response you can append the data when calling the API, like so: `/api/companies?with[]=users`.
+Some endpoints using GET support expanding the returned objects. When they do, they will have an entry in their respective parameter tables for `with`.
+
+For example, imagine that `users` belong to `companies`. To fetch companies with the users nested in the response, you can append the data when calling the API, like so: `/api/companies?with[]=users`.
 
 You can also further expand expanded objects with dot notation. Assuming that in the above example users also have pets, we can retrieve a 3 nested response with `/api/companies?with[]=users.pets`. You can even go deep multiple levels: `/api/companies?with[]=users.pets.favoriteToys`.
 
