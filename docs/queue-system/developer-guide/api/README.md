@@ -124,7 +124,7 @@ GET /api/company-users
 
 | Parameter | Type | Rules | Default | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `with` | `array` | Can be any combination of: `user`, `personalQueue`, `company` | - | What related objects to append to the JSON response |
+| `with` | `array` | Can be any combination of: `user`, `personalQueue`, `company`, `skills`, `answeredQueries` | - | What related objects to append to the JSON response |
 
 Sample response:
 ```json
