@@ -231,6 +231,18 @@ GET /api/company-user-states
 
 ## Hours of operation
 
+## Currently authenticated user
+
+### Get the current authenticated user
+
+::: authorization
+User must be authenticated and have an active account.
+:::
+
+```http:no-line-numbers
+GET /api/me
+```
+
 ## Queues
 
 ### Get all queues
