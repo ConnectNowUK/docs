@@ -215,9 +215,19 @@ When creating a user, an additional personal queue is also created. See: [Concep
 
 ## Company user skills
 
+### Get all company user skills
+
+Append the skills data object when requesting a company user.
+
 ## Company user states
 
 The state of a given user in a company (a company user) determines if they are available to get and answer new queries.
+
+### Get all company user states
+
+```http:no-line-numbers
+GET /api/company-user-states
+```
 
 ## Hours of operation
 
@@ -335,9 +345,15 @@ POST /api/queries
 
 You can add additional notes to each query that are visible to all users responding to a query, regardless of the queue.
 
+### Get all query notes
+
+```http:no-line-numbers
+GET /api/query-notes
+```
+
 ## Query queues
 
-The queues that a given query is on.
+The queues that a given query is on. To get this data, append the queue object when listing queries.
 
 ## Ratings
 
