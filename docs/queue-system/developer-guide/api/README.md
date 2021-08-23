@@ -335,7 +335,7 @@ GET /api/queries
 
 | Parameter | Type | Rules | Default | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `with` | `array` | Can be any combination of: `companyUsers`, `queues` | - | What related objects to append to the JSON response |
+| `with` | `array` | Can be any combination of: `companyUsers`, `queues`, `latestQueue`, `notes` | - | What related objects to append to the JSON response |
 
 
 ### Create a new query
