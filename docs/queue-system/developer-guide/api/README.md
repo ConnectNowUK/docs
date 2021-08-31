@@ -360,6 +360,19 @@ POST /api/queries
 | `surname` | `string` | - | - | - | The surname of the person seeking assistance |
 | `queue_id` | `integer` | A valid queue ID | :white_check_mark: | - | The ID of the queue this query belongs to |
 
+### Answer a query
+::: authorization
+User must be authenticated and have rights for the company, as well as all required skills for the queue (unless the queue is a personal queue that belongs to the authenticated person) Also see: [Concept Overview - queue routing logic](../../user-guide/concept-overview.html#queue-routing-logic).
+:::
+ 
+::: tip
+You will additionally get back a `403` forbidden response if the query has already been answered on all the queues it was waiting on.
+:::
+
+```http:no-line-numbers
+POST /api/queries/{id}/answer
+```
+
 ## Query notes
 
 You can add additional notes to each query that are visible to all users responding to a query, regardless of the queue.
