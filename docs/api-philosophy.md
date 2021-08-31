@@ -122,4 +122,6 @@ You can also further expand expanded objects with dot notation. Assuming that in
 
 You can expand multiple objects by including `with` again, like so: `/api/companies?with[]=users&with[]=offices`.
 
+You can just get the count of a related model by calling `withCount` instead of `with`. Note that `withCount` does not support using dot notation for nested objects.
+
 Note that expandable objects are validated when calling the API, so if you expand with an object that doesn't exist or isn't allowed, you will get a [`422 error`](#response-status-codes). Refer to the documentation of each service to see the objects you can expand.
