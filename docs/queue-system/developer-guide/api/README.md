@@ -229,6 +229,53 @@ The state of a given user in a company (a company user) determines if they are a
 GET /api/company-user-states
 ```
 
+
+
+## Company user queues
+
+### Get a company users queues
+::: authorization
+User must be authenticated and have the right to list the user (belonging to the same company).
+:::
+
+```http:no-line-numbers
+GET /api/company-users/{company-user-id}/queues
+```
+
+Sample response:
+```json
+{
+  "queues": [
+    {
+      "id": 1,
+      "name": "IT Queue",
+      "company_id": 1,
+      "company_user_id": null,
+      "is_active": 1,
+      "priority_delay_in_seconds": 60,
+      "created_at": "2021-09-01T12:31:19.000000Z",
+      "updated_at": "2021-09-01T12:31:19.000000Z",
+      "deleted_at": null,
+      "skills": [
+        {
+          "id": 1,
+          "name": "English",
+          "company_id": 1,
+          "created_at": "2021-09-01T12:31:19.000000Z",
+          "updated_at": "2021-09-01T12:31:19.000000Z",
+          "pivot": {
+            "queue_id": 1,
+            "skill_id": 1
+          }
+        },
+        ...
+      ]
+    }
+  ],
+  "personal_queue": null
+}
+```
+
 ## Hours of operation
 
 ## Currently authenticated user
