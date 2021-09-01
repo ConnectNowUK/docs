@@ -373,6 +373,19 @@ You will additionally get back a `403` forbidden response if the query has alrea
 POST /api/queries/{id}/answer
 ```
 
+### Transfer a query
+::: authorization
+User must be authenticated and have rights for the company that the queue they are transferring to belongs to.
+:::
+ 
+```http:no-line-numbers
+POST /api/queries/{id}/transfer
+```
+
+| Parameter | Type | Rules | Required | Default | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `queue_id` | `id` | Valid queue ID | :white_check_mark: | - | The ID of the queue you want to transfer to |
+
 ## Query notes
 
 You can add additional notes to each query that are visible to all users responding to a query, regardless of the queue.
