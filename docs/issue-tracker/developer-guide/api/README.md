@@ -293,7 +293,7 @@ POST /api/companies
 | Parameter | Type | Rules | Required | Default | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `name` | `string` | Text | :white_check_mark: | - | The name of the category |
-| `logo_url` | `string` | URL | :white_check_mark: | - | The URL to a company logo |
+| `logo_url` | `string` | URL | - | - | The URL to a company logo |
 
 ### Get a single company
 
@@ -323,7 +323,9 @@ PUT /api/companies/{company-id}
 
 | Parameter | Type | Rules | Required | Default | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `name` | `string` | Text | :white_check_mark: | - | The name of the category |
+| `name` | `string` | Text | - | - | The name of the category |
+| `logo_url` | `string` | URL | - | - | The URL to a company logo |
+| `slug` | `string` | Text, not already registered | - | - | The company slug |
 
 ### Delete a single company
 
