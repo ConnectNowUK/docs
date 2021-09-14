@@ -18,9 +18,25 @@ export default defineUserConfig<DefaultThemeOptions>({
             //     link: '/',
             // },
 
+            // {
+            //     text: 'Issue Tracker',
+            //     children: ['/issue-tracker/user-guide/', '/issue-tracker/developer-guide/api/'],
+            // },
+
             {
                 text: 'Issue Tracker',
-                children: ['/issue-tracker/user-guide/', '/issue-tracker/developer-guide/api/'],
+                children: [
+                    {
+                        text: 'User Guides',
+                        children: [
+                            '/issue-tracker/user-guide/',
+                        ],
+                    },
+                    {
+                        text: 'Developer Guides',
+                        children: ['/issue-tracker/developer-guide/api/'],
+                    },
+                ],
             },
 
             {

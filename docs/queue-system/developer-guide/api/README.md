@@ -424,6 +424,10 @@ POST /api/queries/{id}/answer
 ::: authorization
 User must be authenticated and have rights for the company that the queue they are transferring to belongs to.
 :::
+
+::: tip
+You will additionally get back a `403` forbidden response if the queue you are transferring to is a personal queue and the user it belongs to is not available.
+:::
  
 ```http:no-line-numbers
 POST /api/queries/{id}/transfer
