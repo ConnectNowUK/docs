@@ -293,6 +293,7 @@ POST /api/companies
 | Parameter | Type | Rules | Required | Default | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `name` | `string` | Text | :white_check_mark: | - | The name of the category |
+| `logo_url` | `string` | URL | :white_check_mark: | - | The URL to a company logo |
 
 ### Get a single company
 
