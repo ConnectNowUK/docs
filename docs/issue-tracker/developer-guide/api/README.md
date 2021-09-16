@@ -8,7 +8,7 @@ Welcome to the Issue Tracker API docs!
 
 API base:
 ```http:no-line-numbers
-https://issuetracker.connectnow.org.uk
+https://issuetracker-api.connectnow.org.uk
 ```
 
 ::: tip IMPORTANT
