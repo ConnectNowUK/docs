@@ -12,7 +12,7 @@ Every secure ConnectNow Issue Tracker URL starts with **https://issuetracker.con
 
 ## Registering
 
-First, go to <https://issuetracker.connectnow.org.uk/register>.
+First, go to <https://issuetracker.connectnow.org.uk/#register>.
 
 Fill in the details asked of you. You will be sent a verification email. Click the button in the email to verify your account and start using Issue Tracker.
 
@@ -20,11 +20,11 @@ After registering, you'll be prompted to [create or choose your company](#creati
 
 ## Logging in
 
-To log in, go to <https://issuetracker.connectnow.org.uk/login> and provide your email address and password.
+To log in, go to <https://issuetracker.connectnow.org.uk/#login> and provide your email address and password.
 
 ## Resetting your password
 
-To reset your password, go to <https://issuetracker.connectnow.org.uk/forgot-password>, provide your email address when asked, and follow the on-screen instructions.
+To reset your password, go to <https://issuetracker.connectnow.org.uk/#forgot-password>, provide your email address when asked, and follow the on-screen instructions.
 
 ## Confirming notification subscriptions
 
