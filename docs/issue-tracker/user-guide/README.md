@@ -78,6 +78,10 @@ To add a new event, find an open issue that you would like to update and click o
 
 ### Subscribing people to an issue
 
+::: tip
+For privacy reasons, you can only see the amount of people subscribed to an issue, but not the email addresses of each subscriber.
+:::
+
 You can subscribe an email address to any issue. Note that when you subscribe an email address, that email address must confirm their intent to subscribe to the issue (see: [Confirming notification subscriptions](#confirming-notification-subscriptions)).
 
 To add a new subscriber to your issue, find an open issue that you would like to update and click on it. Under 'Subscribe people to issue', enter the email address of the person you wish to subscribe, and press 'Subscribe user'. An invitation to subscribe to the issue will be sent to the email address.
