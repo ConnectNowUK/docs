@@ -64,6 +64,26 @@ Afterwards, choose a category or categories your issue belongs to. If the catego
 
 Lastly, choose the severity of the issue to further categorize it.
 
+## Adding an issue event
+
+You can add events to an issue as the situation progresses. New issue events will automatically be sent to all subscribers and their webhooks.
+
+To add a new event, find an open issue that you would like to update and click on it. Under 'Events', you will have a input field to enter the new event message. Once you're happy with it, click 'Add event' to add the event to the issue and notify all subscribers.
+
+## Subscribing people to an issue
+
+You can subscribe an email address to any issue. Note that when you subscribe an email address, that email address must confirm their intent to subscribe to the issue (see: [Confirming notification subscriptions](/#confirming-notification-subscriptions)).
+
+To add a new subscriber to your issue, find an open issue that you would like to update and click on it. Under 'Subscribe people to issue', enter the email address of the person you wish to subscribe, and press 'Subscribe user'. An invitation to subscribe to the issue will be sent to the email address.
+
+## Closing an issue
+
+When the issue is resolved or deemed closed, you can mark it as such on Issue Tracker.
+
+To close an issue, find an open issue that you would like to update and click on it. Under 'Close issue', write a final event message informing your subscribers of the current state of the issue. When you're happy with your message, tap on 'Close'.
+
+Once you close an issue, you will no longer be able to update it, add events or subscribers, or delete it.
+
 ## Issuing API tokens
 
 Issue Tracker is primarily interacted with via its very powerful API. Some endpoints require authorization, which you can do by issuing yourself a token.
