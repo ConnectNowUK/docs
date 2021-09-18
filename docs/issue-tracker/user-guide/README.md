@@ -40,15 +40,21 @@ Once you have subscribed to an issue, every subsequent email about the issue (ex
 
 Click the link at the bottom of the email within two days to stop receiving notifications about the given issue.
 
-## Creating a company
+## Managing your companies
+
+### Creating a company
 
 When you first register, you will be prompted to select your company. If you see it on the list, select that one. Otherwise, you can create a new company by tapping on the "Create new" option at the bottom.
 
 ![Create company screen](./company.png)
 
+### Switching your active company
+
 If you are a member of multiple companies, you can easily switch the active one. Just hover over the logo in the navigation bar and a company-switcher will appear.
 
-## Creating an issue
+## Managing issues
+
+### Creating an issue
 
 When you become a member of a company either by being invited or creating your own, you will be able to create issues for that company.
 
@@ -64,19 +70,19 @@ Afterwards, choose a category or categories your issue belongs to. If the catego
 
 Lastly, choose the severity of the issue to further categorize it.
 
-## Adding an issue event
+### Adding an issue event
 
 You can add events to an issue as the situation progresses. New issue events will automatically be sent to all subscribers and their webhooks.
 
 To add a new event, find an open issue that you would like to update and click on it. Under 'Events', you will have a input field to enter the new event message. Once you're happy with it, click 'Add event' to add the event to the issue and notify all subscribers.
 
-## Subscribing people to an issue
+### Subscribing people to an issue
 
-You can subscribe an email address to any issue. Note that when you subscribe an email address, that email address must confirm their intent to subscribe to the issue (see: [Confirming notification subscriptions](/#confirming-notification-subscriptions)).
+You can subscribe an email address to any issue. Note that when you subscribe an email address, that email address must confirm their intent to subscribe to the issue (see: [Confirming notification subscriptions](#confirming-notification-subscriptions)).
 
 To add a new subscriber to your issue, find an open issue that you would like to update and click on it. Under 'Subscribe people to issue', enter the email address of the person you wish to subscribe, and press 'Subscribe user'. An invitation to subscribe to the issue will be sent to the email address.
 
-## Closing an issue
+### Closing an issue
 
 When the issue is resolved or deemed closed, you can mark it as such on Issue Tracker.
 
