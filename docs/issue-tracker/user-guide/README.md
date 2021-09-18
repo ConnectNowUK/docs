@@ -16,6 +16,8 @@ First, go to <https://issuetracker.connectnow.org.uk/register>.
 
 Fill in the details asked of you. You will be sent a verification email. Click the button in the email to verify your account and start using Issue Tracker.
 
+After registering, you'll be prompted to [create or choose your company](#creating-a-company).
+
 ## Logging in
 
 To log in, go to <https://issuetracker.connectnow.org.uk/login> and provide your email address and password.
@@ -37,6 +39,20 @@ To no longer receive emails about a given issue, simply ignore the email. Do not
 Once you have subscribed to an issue, every subsequent email about the issue (except when the issue is closed) will contain an unsubscribe link at the bottom. 
 
 Click the link at the bottom of the email within two days to stop receiving notifications about the given issue.
+
+## Creating a company
+
+When you first register, you will be prompted to select your company. If you see it on the list, select that one. Otherwise, you can create a new company by tapping on the "Create new" option at the bottom.
+
+![Create company screen](./company.png)
+
+## Creating an issue
+
+When you become a member of a company either by being invited or creating your own, you will be able to create issues for that company.
+
+On the sidebar choose 'Issues', then next to 'All issues' choose 'Create new issues'. You'll be able to create your issue here.
+
+![Create issue screen](./createIssue.png)
 
 ## Issuing API tokens
 
