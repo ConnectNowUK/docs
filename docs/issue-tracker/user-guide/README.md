@@ -60,6 +60,8 @@ When you first register, you will be prompted to select your company. If you see
 
 ![Create company screen](./company.png)
 
+If you are already a part of one or more companies, you can create a new company by choosing the last row from the company-switcher, detailed in the next section.
+
 ### Switching your active company
 
 If you are a member of multiple companies, you can easily switch the active one. Just hover over the logo in the navigation bar and a company-switcher will appear.
