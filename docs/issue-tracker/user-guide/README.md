@@ -10,6 +10,10 @@ Welcome to the Issue Tracker user guide docs! These docs will guide you on using
 Every secure ConnectNow Issue Tracker URL starts with **https://issuetracker.connectnow.org.uk**. Make sure yours does too to keep your information safe.
 :::
 
+::: warning
+The UI for Issue Tracker is in active development, and documentation may change at a moments notice.
+:::
+
 ## Getting in to Issue Tracker
 
 ### Registering
@@ -112,7 +116,7 @@ To close an issue, find an open issue that you would like to update and click on
 
 Once you close an issue, you will no longer be able to update it, add events or subscribers, or delete it.
 
-## Managing your API tokens
+## Managing your API tokens and webhooks
 
 ### Issuing API tokens
 
@@ -120,13 +124,23 @@ Issue Tracker is primarily interacted with via its very powerful API. Some endpo
 
 If you're unsure of what this section means, contact your developer team.
 
-You can issue API tokens to access Issue Tracker via API. First, [log in](#logging-in). Click on "Create a new token" to create a new token. The token will only be shown once; keep it guarded as you would any other secret.
+You can issue API tokens to access Issue Tracker via API. First, go to your [account settings](https://issuetracker.connectnow.org.uk/#settings). Under the 'API tokens' section, fill in the name of your new token and click "Create a new token" to create the token. The token will only be shown once; keep it guarded as you would any other secret.
 
 Head over to the [API docs](../developer-guide/api/) for more info on using the API.
 
 ### Revoking API tokens
 
 When you need to revoke an API token, you can do so after logging in to Issue Tracker. Then, on the row of the token you want to revoke, click on "revoke token".
+
+### Creating new webhooks
+
+You can create webhooks that Issue Tracker can notify when certain events occur.
+
+If you're unsure of what this section means, contact your developer team.
+
+First, go to your [account settings](https://issuetracker.connectnow.org.uk/#settings). Under the 'Webhooks' section, fill in the name of your new webhook, and the URL it should trigger. Finally, click "Create a new token" to create the webhook.
+
+Head over to the [API docs](../developer-guide/api/#available-webhook-events) for more info on webhooks and the events they emit.
 
 ## Managing your subscription plan
 
