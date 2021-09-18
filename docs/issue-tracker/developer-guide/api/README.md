@@ -117,6 +117,7 @@ Sample response:
 	"name": "Server login issues",
 	"severity": "critical",
 	"closed_at": null,
+	"subscribers_count": 15,
 	"created_at": "2021-04-26T13:46:46.000000Z",
 	"updated_at": "2021-04-26T13:46:46.000000Z"
 }
