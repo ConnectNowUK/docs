@@ -46,6 +46,8 @@ When you first register, you will be prompted to select your company. If you see
 
 ![Create company screen](./company.png)
 
+If you are a member of multiple companies, you can easily switch the active one. Just hover over the logo in the navigation bar and a company-switcher will appear.
+
 ## Creating an issue
 
 When you become a member of a company either by being invited or creating your own, you will be able to create issues for that company.
@@ -53,6 +55,14 @@ When you become a member of a company either by being invited or creating your o
 On the sidebar choose 'Issues', then next to 'All issues' choose 'Create new issues'. You'll be able to create your issue here.
 
 ![Create issue screen](./createIssue.png)
+
+Fill in the name of your issue. This should usually be descriptive enough so the issue is immediately clear, but keep it concise.
+
+Next, fill in an initial event description. This is a good place to write "We've discovered the problem, and are working on it" or similar. The description should be relevant to the current point in time - later on you can add events as the issue progresses.
+
+Afterwards, choose a category or categories your issue belongs to. If the category you want doesn't exist, you can create a new one simply by typing the name of the category you want and pressing the Enter key.
+
+Lastly, choose the severity of the issue to further categorize it.
 
 ## Issuing API tokens
 
