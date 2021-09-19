@@ -50,6 +50,7 @@ ConnectNow APIs return the following status codes in its API:
 | :--- | :--- | :--- |
 | 200 | `OK` | All good
 | 201 | `CREATED` | The resource has been successfully created
+| 202 | `ACCEPTED` | The request made has been accepted, and is scheduled for processing
 | 401 | `UNAUTHENTICATED` | Your API token, or the way you are passing it, is incorrect
 | 403 | `FORBIDDEN` | You are not allowed to do the action
 | 404 | `NOT FOUND` | The resource you are looking for does not exist
@@ -57,6 +58,8 @@ ConnectNow APIs return the following status codes in its API:
 | 422 | `BAD REQUEST` | Your request is malformed, data required is missing and/or incorrect
 | 429 | `TOO MANY REQUESTS` | You have exceeded the rate-limiter limits
 | 500 | `INTERNAL SERVER ERROR` | There was a problem with the server - if you encounter this one, please let us know
+
+More general information about status codes can be found here: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 
 ## Paginated responses
 
