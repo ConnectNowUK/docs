@@ -22,7 +22,11 @@ First, go to <https://issuetracker.connectnow.org.uk/#register>.
 
 Fill in the details asked of you. You will be sent a verification email. Click the button in the email to verify your account and start using Issue Tracker.
 
-After registering, you'll be prompted to [create or choose your company](#creating-a-company).
+After registering, you'll be prompted to [create or choose your company](#creating-a-company). Before continuing with creating a company, you should also [verify your email](#confirming-your-email-and-account).
+
+### Confirming your email and account
+
+When you register, you will receive an email asking you to verify your email address. You need to click the link in the email to verify your email address and be able to fully use your account.
 
 ### Logging in
 
