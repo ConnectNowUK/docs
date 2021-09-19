@@ -30,7 +30,9 @@ To log in, go to <https://issuetracker.connectnow.org.uk/#login> and provide you
 
 ### Resetting your password
 
-To reset your password, go to <https://issuetracker.connectnow.org.uk/#forgot-password>, provide your email address when asked, and follow the on-screen instructions.
+To reset your password, go to <https://issuetracker.connectnow.org.uk/#forgot-password>, provide your email address when asked, and send yourself a password reset email.
+
+When you get the email, click the link to reset your password. You will be taken to a screen asking to confirm your email address, type in a new password, and confirm the new password. When you have successfully reset your password, you will be redirected to the login page, where you will able to log in with your new password.
 
 ### Logging out
 
