@@ -150,4 +150,16 @@ Head over to the [API docs](../developer-guide/api/#available-webhook-events) fo
 
 ## Managing your subscription plan
 
-You can edit your billing plan, and consequently the features available to you, on your administration page. After logging in, scroll down below the "Tokens" section to change your current plan.
+> Coming soon.
+
+## Install the Issue Tracker web-app on your devices
+
+You can install the Issue Tracker web-app onto your phone as it is a modern progressive-web-app.
+
+### On Chrome and Chromium (Android)
+
+You will be prompted by your device to install the app when navigating to it in a Chrome based browser. On a desktop device, including Mac OS devices, you will be prompted to install the application with an icon in the address (URL) bar.
+
+### On iOS
+
+You can save the web-app to your Home screen on iOS. From the website, tap the Share button, then tap Add to Home Screen.
