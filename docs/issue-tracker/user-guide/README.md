@@ -122,6 +122,23 @@ To close an issue, find an open issue that you would like to update and click on
 
 Once you close an issue, you will no longer be able to update it, add events or subscribers, or delete it.
 
+
+## Managing categories
+
+### Creating a category
+
+To create a new category, just add it when creating your issue. See: [creating an issue](#creating-an-issue).
+
+### Subscribing people to a category
+
+::: tip
+For privacy reasons, you can only see the amount of people subscribed to a category, but not the email addresses of each subscriber.
+:::
+
+You can subscribe an email address to any category. Note that when you subscribe an email address, that email address must confirm their intent to subscribe to the category (see: [Confirming notification subscriptions](#confirming-notification-subscriptions)).
+
+To add a new subscriber to your category, find a category that you would like to subscribe someone to and click on it. Under 'Subscribe people to category', enter the email address of the person you wish to subscribe, and press 'Subscribe user'. An invitation to subscribe to the category will be sent to the email address.
+
 ## Managing your API tokens and webhooks
 
 ### Issuing API tokens
