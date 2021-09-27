@@ -78,6 +78,14 @@ If you are a member of multiple companies, you can easily switch the active one.
 
 ## Managing issues
 
+### Seeing recent issues
+
+You can see your recently created issues on the 'Issues' page. Along with the issue name, you will be able to see the issue severity below it.
+
+An issue with a line going through it indicates that it is closed/resolved.
+
+To see more info on any given issue, click on the issue to be taken to its specific page.
+
 ### Creating an issue
 
 When you become a member of a company either by being invited or creating your own, you will be able to create issues for that company.
