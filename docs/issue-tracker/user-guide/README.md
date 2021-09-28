@@ -76,6 +76,10 @@ If you are already a part of one or more companies, you can create a new company
 
 If you are a member of multiple companies, you can easily switch the active one. Just hover over the logo in the navigation bar and a company-switcher will appear.
 
+### Updating company settings
+
+You can update the settings of companies you belong to. In the admin panel, tap on 'Company settings'. There, you can change the name of the company as well as the URL to your company's logo. After changing any current value, the changes will be saved automatically.
+
 ## Managing issues
 
 ### Seeing recent issues
