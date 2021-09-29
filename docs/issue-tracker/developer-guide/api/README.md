@@ -340,6 +340,46 @@ DELETE /api/companies/{company-id}
 
 Authorization: user must be authenticated and have access to the specified company.
 
+## Company users
+
+### Get all company users
+
+::: authorization
+You must be authorized to access this company
+:::
+
+```http:no-line-numbers
+GET /api/companies/{company-id}/users
+```
+
+### Add a company user
+
+::: authorization
+You must be authorized to access this company
+:::
+
+```http:no-line-numbers
+POST /api/companies/{company-id}/users
+```
+
+| Parameter | Type | Rules | Required | Default | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `email` | `email` | Email | :white_check_mark: | - | The email of the person you want to invite |
+
+### Delete a company user
+
+::: authorization
+You must be authorized to access this company
+:::
+
+::: tip
+The company-user-id is not the same as the user-id field. The company-user-id can commonly be found on the pivot object
+:::
+
+```http:no-line-numbers
+DELETE /api/companies/{company-id}/users/{company-user-id}
+```
+
 ## Webhooks
 
 ::: authorization
