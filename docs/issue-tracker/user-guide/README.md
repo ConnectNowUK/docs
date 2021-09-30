@@ -16,6 +16,10 @@ The UI for Issue Tracker is in active development, and documentation may change 
 
 ## Getting in to Issue Tracker
 
+::: tip
+If you've been invited to a company but never had an account on Issue Tracker, one was created for you with the same email address that received the invite. You can go [reset your password](#resetting-your-password) to set a password and start using Issue Tracker.
+:::
+
 ### Registering
 
 First, go to <https://issuetracker.connectnow.org.uk/#register>.
