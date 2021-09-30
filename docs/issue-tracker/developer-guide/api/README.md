@@ -466,3 +466,7 @@ Sends an event to the user when an issue they are subscribed to is closed.
 #### issue_updated
 
 Sends an event to the user when an issue they are subscribed to is updated.
+
+#### invited_to_company
+
+Sends an event to the user when they are invited and become a member of a new company.
