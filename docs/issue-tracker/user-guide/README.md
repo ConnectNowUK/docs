@@ -80,6 +80,12 @@ If you are a member of multiple companies, you can easily switch the active one.
 
 You can update the settings of companies you belong to. In the admin panel, tap on 'Company settings'. There, you can change the name of the company as well as the URL to your company's logo. After changing any current value, the changes will be saved automatically.
 
+### Adding and removing members in your company
+
+You can add people to your company so they too can create issues, categories, and more. To do so, first make sure you are logged in and have the company you want to manage actively selected. Then, go to 'Company users' in the sidebar.
+
+On this page, you will be able to see all the users in your company. To add a new user, type in the email address of the person you want to invite. They will then become a member of your company, after receiving an email informing them of their new membership.
+
 ## Managing issues
 
 ### Seeing recent issues
