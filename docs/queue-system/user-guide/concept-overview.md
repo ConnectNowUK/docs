@@ -12,7 +12,7 @@ This documentation is a work in progress.
 
 ## Use cases and intended audience
 
-The queue system provides a way for support centers to route incoming queries to the correct users (users) based on the users skills, effectively creating a skill-based routing.
+The queue system provides a way for support centers to route incoming queries to the correct agents (referred to as users, see: [terminology](#user)) based on the users skills, effectively creating a skill-based routing system.
 
 ## Benefits
 
@@ -48,7 +48,7 @@ Each user in a company gets a personal queue that they can always respond to. Th
 
 Some queues are password protected so that the general public can not just join them. A common use case for these types of queues are for VIP queues.
 
-In addition, personal queues are automatically password protected, preventing people from launching queries directly at specific users.
+In addition, [personal queues](#personal-queues) are automatically password protected, preventing the general public from launching queries directly at specific users.
 
 ## User skill levels (priorities)
 
