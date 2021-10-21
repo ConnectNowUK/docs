@@ -208,7 +208,7 @@ POST /api/company-users
 | `is_auto_max_number_handled` | `boolean` | `true` or `false` | :white_check_mark: | `true` | Whether this user's simultaneous handle limit is manually set, or managed by the system. The system may change this value based on the user's performance and achievements.  |
 | `ability_to_pick_from_queue` | `boolean` |  `true` or `false` | :white_check_mark:  | `false` | Whether this company user can choose which queries to answer from the queue |
 | `is_auto_ability_to_pick_from_queue` | `boolean` | `true` or `false` | :white_check_mark:  | `true` | Whether this user's ability to choose which query they answer is manually set, or managed by the system. The system may change this value based on the user's performance and achievements. |
-| `role` | `string` | TODO: A valid role | :white_check_mark: | `agent` | The access level for this company user |
+| `role` | `string` | A valid role (agent, staffing_manager, or manager) | :white_check_mark: | `agent` | The access level for this company user |
 | `is_active` | `boolean` | `true` or `false` | :white_check_mark: | `true` | Whether this company user is active or not. See: [Billing - active users](../../user-guide/billing.html#active-users])) |
 
 When creating a user, a personal queue is also created. See: [Concept Overview - personal queues](../../user-guide/concept-overview.html#personal-queues])). In addition, a default user state is also created, with `is_available` set to `0` (false). Lastly, an invitation email is sent to the `invited_email`.
@@ -554,7 +554,6 @@ PUT /api/company-users/{company-id}/skills
 | Parameter | Type | Rules | Required | Default | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `skill_ids` | `array` | - | :white_check_mark: | - | Array of skill ID's to sync |
-
 
 ## Users
 
