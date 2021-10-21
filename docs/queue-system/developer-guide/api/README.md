@@ -420,6 +420,19 @@ You will additionally get back a `403` forbidden response if the query has alrea
 POST /api/queries/{id}/answer
 ```
 
+### Mark a query as done
+::: authorization
+User must be authenticated and have rights for the company.
+:::
+ 
+::: tip
+You will additionally get back a `403` forbidden response if the query was not last answered by you.
+:::
+
+```http:no-line-numbers
+POST /api/queries/{id}/mark-as-done
+```
+
 ### Transfer a query
 ::: authorization
 User must be authenticated and have rights for the company that the queue they are transferring to belongs to.
@@ -523,6 +536,25 @@ POST /api/skills
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `name` | `string` | Text | :white_check_mark: | - | The name of the skill |
 | `company_id` | `integer` | A valid company ID | :white_check_mark: | - | The ID of the company this skill belongs to|
+
+### Update a company users skills
+
+::: authorization
+User must be authenticated and have rights for the company, as well as have the staffing-manager role or the manager role.
+:::
+
+::: tip
+This is a synchronous operation, meaning you must pass all the skill_ids that you want the user to have. Existing skill IDs that are not passed will be removed from the user.
+:::
+
+```http:no-line-numbers
+PUT /api/company-users/{company-id}/skills
+```
+
+| Parameter | Type | Rules | Required | Default | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `skill_ids` | `array` | - | :white_check_mark: | - | Array of skill ID's to sync |
+
 
 ## Users
 
