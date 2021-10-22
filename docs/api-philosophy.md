@@ -111,6 +111,14 @@ To avoid potential ambiguity, it's best to use ISO 8601 (YYYY-MM-DD) dates.
 
 An invalid date passed to either parameter will yield a [`422 error`](#response-status-codes).
 
+### Filtering with scopes
+
+| Parameter | Type | Rules | Default | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `scopes` | `array` | An array of valid scopes | - | Filter by objects created before or on this date |
+
+You can filter by valid model scopes to further limit the results you get back.
+
 ## Expanding objects & appending data
 
 ::: warning
