@@ -125,6 +125,7 @@ GET /api/company-users
 | Parameter | Type | Rules | Default | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `with` | `array` | Can be any combination of: `user`, `personalQueue`, `company`, `skills`, `answeredQueries` | - | What related objects to append to the JSON response |
+| `scopes` | `array` | Can be any combination of: `available`, `active`, `withinMaxOngoingQueryLimits`, `canTakeQuery`, `manager` | - | What scopes to apply to the query |
 
 Sample response:
 ```json
@@ -306,6 +307,7 @@ GET /api/queues
 | Parameter | Type | Rules | Default | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `with` | `array` | Can be any combination of: `queries`, `unansweredQueries`, `latestQuery`, `skills`, `companyUser` | - | What related objects to append to the JSON response |
+| `scopes` | `array` | Can be any combination of: `available`, `active` | - | What scopes to apply to the query |
 
 ```json
 [
@@ -325,6 +327,8 @@ GET /api/queues
   },
 ]
 ```
+
+The `available` scope checks that the queue is active, and that there are active and online users on the queue. The `active` scope only checks if the queue is `active`.
 
 ### Get a single queue
 
