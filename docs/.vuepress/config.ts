@@ -63,6 +63,7 @@ export default defineUserConfig<DefaultThemeOptions>({
                         text: 'User Guides',
                         children: [
                             '/queue-system/user-guide/concept-overview.md',
+                            '/queue-system/user-guide/',
                         ],
                     },
                     {
