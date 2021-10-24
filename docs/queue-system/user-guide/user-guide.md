@@ -1,13 +1,17 @@
 ---
 lang: en-US
-title: Chat User Guide
-description: User Guide for using ConnectNow Chat
+title: Queue System User Guide
+description: User Guide for using ConnectNow Queues
 ---
 # Welcome to Queues
 Welcome to the Queue System user guide docs! These docs will guide you on using ConnectNow as a user with a registered account.
 
 ::: tip
 Every secure ConnectNow Queue System URL starts with **https://queues.connectnow.org.uk**. Make sure yours does too to keep your information safe.
+:::
+
+::: tip
+It's recommended that you familiarize yourself with the [concept overview](./concept-overview.md) beforehand.
 :::
 
 ::: warning
