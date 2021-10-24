@@ -75,6 +75,50 @@ You can add people to your company so they too can interact with your company in
 
 On this page, you will be able to see all the users in your company. To add a new user, type in the email address of the person you want to invite. They will then become a member of your company, after receiving an email informing them of their new membership.
 
+## Managing your online/offline status
+
+You can go set your status as online or offline to choose when you receive new incoming queries. Changing your status also creates a historical record that allows staffing managers and company managers to see your status.
+
+### Going online
+
+You can go online at any time by changing your status in the navbar. When you go online, you will start receiving incoming queries from your queues.
+
+### Going offline
+
+When you are no longer available to provide support at a given moment, you can switch yourself to offline. This will stop any new incoming queries from coming to you.
+
+### Setting a custom status message
+
+After going online or offline, you can further set a custom status text.
+
+As an example, when leaving for lunch, you can switch yourself to offline and write a custom status text of "Off to lunch" to let your managers know where you've gone to.
+
+### Automatically going offline
+
+Sometimes, especially after extended periods of no interaction, the system may automatically set you as offline. If this happens, you will also receive an email about it.
+
+In general, it is best to manually set your status to offline when you are no longer able to provide support for the day.
+
+## Working with queries
+
+### Seeing incoming queries
+
+When your status is online, you will see any new incoming queries immediately in the queries dropdown in the navbar.
+
+### Answering queries
+
+To answer queries, press "Answer" next to the query you'd like to answer.
+
+Sometimes you may need to re-open the source/link to the query. If the query has a source that is a link, you will see a "reopen link" button after answering the query that will let you re-open the link.
+
+### Transferring queries
+
+To transfer a query you are currently working on, press "Transfer" next to the query you'd like to transfer. This will open a modal where you can select the queue to transfer to.
+
+### Completing (mark as done) queries
+
+If/when you have managed to completely resolve a given query, you can choose to "Mark as done". This will close the query and mark it as complete in the system, while also attributing the final resolution step to you.
+
 ## Install the queues web-app on your devices
 
 You can install the queues web-app onto your phone as it is a modern progressive-web-app.
