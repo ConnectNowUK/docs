@@ -53,7 +53,7 @@ You can log out by pressing the 'Log out' button on the navigation bar, in the t
 
 When you first register, you will be prompted to select your company. If you see it on the list, select that one. Otherwise, you can create a new company by tapping on the "Create new" option at the bottom.
 
-![Create company screen](./company.png)
+![Create company screen](../../issue-tracker/user-guide/company.png)
 
 If you are already a part of one or more companies, you can create a new company by choosing the last row from the company-switcher, detailed in the next section.
 
