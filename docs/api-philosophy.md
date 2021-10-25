@@ -65,6 +65,8 @@ More general information about status codes can be found here: https://developer
 
 Some responses are paginated. You can access additional pages by passing the `page` parameter. Paginated responses include additional information to help you build pagination on the frontend.
 
+By default, 15 results will be returned per page. You can choose to return up to `249` records per page or less by passing the `per_page` parameter.
+
 ```json
 {
 	"current_page": 1,
@@ -118,6 +120,8 @@ An invalid date passed to either parameter will yield a [`422 error`](#response-
 | `scopes` | `array` | An array of valid scopes | - | Filter by objects created before or on this date |
 
 You can filter by valid model scopes to further limit the results you get back.
+
+Additionally, all models implementing filtering with scopes also have a `latest` scope, which will order results returned from newest to oldest.
 
 ## Expanding objects & appending data
 
