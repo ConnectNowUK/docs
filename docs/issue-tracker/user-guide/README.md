@@ -206,6 +206,5 @@ You can save the web-app to your Home screen on iOS. From the website, tap the S
 
 ## Need more help?
 
-<iframe src="https://queues.connectnow.org.uk/companies/1/embed?chat_company_id=1"
-            title="Talk to an agent" width="400" height="300">
+<iframe src="https://queues.connectnow.org.uk/companies/1/embed?chat_company_id=1" title="Talk to an agent" style="min-height: 620px;width: 100%;border: none;">
 </iframe>
