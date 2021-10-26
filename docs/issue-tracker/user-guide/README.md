@@ -3,7 +3,9 @@ lang: en-US
 title: Issue Tracker User Guide
 description: Description of this page
 ---
+
 # Welcome to Issue Tracker
+
 Welcome to the Issue Tracker user guide docs! These docs will guide you on using ConnectNow as a user with a registered account.
 
 ::: tip
@@ -62,7 +64,7 @@ To no longer receive emails about a given issue, simply ignore the email. Do not
 
 ### Unsubscribing from notifications
 
-Once you have subscribed to an issue, every subsequent email about the issue (except when the issue is closed) will contain an unsubscribe link at the bottom. 
+Once you have subscribed to an issue, every subsequent email about the issue (except when the issue is closed) will contain an unsubscribe link at the bottom.
 
 Click the link at the bottom of the email within two days to stop receiving notifications about the given issue.
 
@@ -144,7 +146,6 @@ To close an issue, find an open issue that you would like to update and click on
 
 Once you close an issue, you will no longer be able to update it, add events or subscribers, or delete it.
 
-
 ## Managing categories
 
 ### Creating a category
@@ -202,3 +203,9 @@ You will be prompted by your device to install the app when navigating to it in 
 ### On iOS
 
 You can save the web-app to your Home screen on iOS. From the website, tap the Share button, then tap Add to Home Screen.
+
+## Need more help?
+
+<iframe src="https://queues.connectnow.org.uk/companies/1/embed"
+            title="Talk to an agent" width="400" height="300">
+</iframe>
