@@ -3,7 +3,7 @@ lang: en-US
 title: Queue API Guide
 description: Developer Guide for people using ConnectNow Queue System
 ---
-# ConnectNow Queue Concept Overview
+# ConnectNow Queue API Documentation
 Welcome to the Queue System developer-guide API docs!
 
 ::: tip IMPORTANT
@@ -395,7 +395,8 @@ GET /api/queries
 | Parameter | Type | Rules | Default | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `with` | `array` | Can be any combination of: `companyUsers`, `queues`, `latestQueue`, `notes` | - | What related objects to append to the JSON response |
-| `scopes` | `array` | Can be any combination of: `completed`, `ongoing` | - | What scopes to apply to the query |
+| `scopes` | `array` | Can be any combination of: `completed`, `ongoing`, `company_id`, `company_user_id` | - | What scopes to apply to the query |
+
 ### Create a new query
 
 ```http:no-line-numbers
