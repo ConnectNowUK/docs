@@ -3,7 +3,9 @@ lang: en-US
 title: Chat User Guide for Company Managers
 description: User Guide for company managers using ConnectNow Chat
 ---
+
 # ConnectNow Chat for Company Managers
+
 Welcome to the Chat company manager guide docs! These docs will guide you on using ConnectNow as a company manager.
 
 ::: tip IMPORTANT
@@ -39,6 +41,8 @@ This documentation is a work in progress.
 ## Settings
 
 ### Editing company logo
+
+Note: the logo must be a square, and supports PNG, JPG, and SVG formats.
 
 ## Billing
 

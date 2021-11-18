@@ -3,7 +3,9 @@ lang: en-US
 title: Queue System User Guide
 description: User Guide for using ConnectNow Queues
 ---
+
 # Welcome to Queues
+
 Welcome to the Queue System user guide docs! These docs will guide you on using ConnectNow as a user with a registered account.
 
 ::: tip
@@ -50,7 +52,6 @@ When you get the email, click the link to reset your password. You will be taken
 
 You can log out by pressing the 'Log out' button on the navigation bar, in the top right corner. Once you log out, you will be redirected to the login screen.
 
-
 ## Managing your companies
 
 ### Creating a company
@@ -68,6 +69,8 @@ If you are a member of multiple companies, you can easily switch the active one.
 ### Updating company settings
 
 You can update the settings of companies you belong to. In the admin panel, tap on 'Company settings'. There, you can change the name of the company as well as the URL to your company's logo. After changing any current value, the changes will be saved automatically.
+
+Note: the logo must be a square, and supports PNG, JPG, and SVG formats.
 
 ### Adding and removing members in your company
 
