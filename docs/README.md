@@ -28,6 +28,10 @@ navbar: true
 
 # Hello and welcome to ConnectNow Docs
 
+## Reporting security vulnerabilities
+
+If you discover any security vulnerabilities in ConnectNow, please report them directly to our email address, [info@connectnow.org.uk](mailto:info@connectnow.org.uk). Include the steps to reproduce the vulnerability and as many other details as you can, such as your operating system, browser version, and any other relevant information.
+
 ## Editing these docs
 
 These docs are written in markdown on a public repo. Edit them there.
