@@ -108,6 +108,8 @@ In general, it is best to manually set your status to offline when you are no lo
 
 ## Working with queries
 
+You can work with queries from the queries dropdown in the navbar. If there are no incoming or ongoing queries, the "Queries" text will be grey. If there is a new incoming query you can answer, you will see a red dot next to the "Queries" text, and the text itself will be bold. If there is an ongoing query, the "Queries" text will also be black and bold.
+
 ### Seeing incoming queries
 
 When your status is online, you will see any new incoming queries immediately in the queries dropdown in the navbar.
@@ -125,6 +127,8 @@ To transfer a query you are currently working on, press "Transfer" next to the q
 ### Completing (mark as done) queries
 
 If/when you have managed to completely resolve a given query, you can choose to "Mark as done". This will close the query and mark it as complete in the system, while also attributing the final resolution step to you.
+
+To mark your query as done, in the queries dropdown in the navbar, press "Mark as done" next to the query you'd like to mark as done.
 
 ## Install the queues web-app on your devices
 
