@@ -72,6 +72,8 @@ You can update the settings of companies you belong to. In the admin panel, tap 
 
 Note: the logo must be a square, and supports PNG, JPG, and SVG formats.
 
+You can additionally edit the "Support closed" message that your customers see when there are no queues with active/available users. Under "Closed text", input text to show to customers when your support desk is closed. If left blank, a default message will be shown.
+
 ### Adding and removing members in your company
 
 ::: tip
