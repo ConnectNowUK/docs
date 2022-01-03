@@ -122,6 +122,8 @@ To answer queries, press "Answer" next to the query you'd like to answer.
 
 Sometimes you may need to re-open the source/link to the query. If the query has a source that is a link, you will see a "reopen link" button after answering the query that will let you re-open the link.
 
+If a query is not answered for over a couple of hours, it will automatically expire and will not be available to be answered.
+
 ### Transferring queries
 
 To transfer a query you are currently working on, press "Transfer" next to the query you'd like to transfer. This will open a modal where you can select the queue to transfer to.
@@ -131,6 +133,8 @@ To transfer a query you are currently working on, press "Transfer" next to the q
 If/when you have managed to completely resolve a given query, you can choose to "Mark as done". This will close the query and mark it as complete in the system, while also attributing the final resolution step to you.
 
 To mark your query as done, in the queries dropdown in the navbar, press "Mark as done" next to the query you'd like to mark as done.
+
+If you've got a query that has been open for a significant amount of time, the system will begin to email you reminders to mark the query as done, every two hours.
 
 ## Install the queues web-app on your devices
 
