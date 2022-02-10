@@ -13,3 +13,11 @@
   padding: .1rem 1.5rem;
   margin: 1rem 0;
 }
+
+a.sidebar-item + .sidebar-sub-items {
+  display: none;
+}
+
+a.sidebar-item.active + .sidebar-sub-items {
+  display: block;
+}
