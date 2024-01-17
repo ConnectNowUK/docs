@@ -26,10 +26,16 @@ export default defineUserConfig({
             // },
 
             {
-                text: 'General',
+                text: "Technical",
                 children: [
-                    '/general/api-philosophy.html',
-                    '/general/architecture.html'
+                    {
+                        text: "General",
+                        children: ["/technical/api-philosophy.html"],
+                    },
+                    {
+                        text: "Reference",
+                        children: ["/technical/architecture.html"],
+                    },
                 ],
             },
 
@@ -82,6 +88,16 @@ export default defineUserConfig({
                     },
                 ],
             },
+
+            {
+                text: 'Policies',
+                children: [
+                    '/policies/data-policies.html',
+                    '/policies/terms.html',
+                    '/policies/privacy.html',
+                    '/policies/cookies.html',
+                ],
+            }
         ],
     }),
     plugins: [

@@ -1,6 +1,6 @@
 ---
 lang: en-GB
-title: General API Philosophy
+title: API Philosophy
 description: Description of ConnectNow's approach to our APIs
 ---
 # API Philosophy

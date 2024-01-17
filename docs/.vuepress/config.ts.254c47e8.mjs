@@ -26,7 +26,7 @@ var config_default = defineUserConfig({
       // },
       {
         text: "General",
-        children: ["/general/api-philosophy.md"]
+        children: ["/technical/api-philosophy.md"]
       },
       {
         text: "Issue Tracker",
