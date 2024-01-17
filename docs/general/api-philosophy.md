@@ -1,7 +1,7 @@
 ---
 lang: en-GB
 title: General API Philosophy
-description: Description of ConnectNows approach to our APIs
+description: Description of ConnectNow's approach to our APIs
 ---
 # API Philosophy
 Welcome to the ConnectNow APIs docs!

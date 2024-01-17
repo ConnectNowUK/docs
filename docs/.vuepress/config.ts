@@ -28,8 +28,9 @@ export default defineUserConfig({
             {
                 text: 'General',
                 children: [
-                    '/general/api-philosophy.md'
-                ]
+                    '/general/api-philosophy.html',
+                    '/general/architecture.html'
+                ],
             },
 
             {
