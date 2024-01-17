@@ -1,17 +1,19 @@
-import { defineUserConfig } from 'vuepress'
-import type { DefaultThemeOptions } from 'vuepress'
-import { path } from '@vuepress/utils'
+import { containerPlugin } from '@vuepress/plugin-container';
+import { defaultTheme, defineUserConfig } from 'vuepress';
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics';
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components';
+import { searchPlugin } from '@vuepress/plugin-search';
+import { path } from '@vuepress/utils';
 
-export default defineUserConfig<DefaultThemeOptions>({
+export default defineUserConfig({
     lang: 'en-GB',
     title: 'ConnectNow Docs',
-    description: 'Just playing around',
+    description: 'Documentation for ConnectNow services',
 
-    themeConfig: {
+    theme: defaultTheme({
         logo: 'https://d1jdn0pmurlmlu.cloudfront.net/cn-logo.svg',
         docsRepo: 'ConnectNowUK/docs',
         docsDir: 'docs',
-        displayAllHeaders: true,
         navbar: [
             // {
             //     text: 'Home',
@@ -79,52 +81,39 @@ export default defineUserConfig<DefaultThemeOptions>({
                     },
                 ],
             },
-
         ],
-    },
+    }),
     plugins: [
-        'check-md',
-        [
-            '@vuepress/plugin-google-analytics',
-            {
-                id: 'G-HMS6SBZGCE',
-            },
-        ],
-        [
-            '@vuepress/plugin-search',
-            {
-                locales: {
-                    '/': {
-                        placeholder: 'Search',
-                    },
-                    '/zh/': {
-                        placeholder: '搜索',
-                    },
+        googleAnalyticsPlugin({
+            id: 'G-HMS6SBZGCE',
+        }),
+        searchPlugin({
+            locales: {
+                '/': {
+                    placeholder: 'Search',
+                },
+                '/zh/': {
+                    placeholder: '搜索',
                 },
             },
-        ],
-        [
-            '@vuepress/register-components',
-            {
-                componentsDir: path.resolve(__dirname, './components'),
-            },
-        ],
-        [
-            '@vuepress/container',
-            {
-                type: 'authorization',
-                locales: {
-                    '/': {
-                        defaultInfo: 'Authorization required',
-                    },
-                    '/zh/': {
-                        defaultInfo: '提示',
-                    },
+        }),
+        registerComponentsPlugin({
+            componentsDir: path.resolve(__dirname, './components'),
+        }),
+        containerPlugin({
+            type: 'authorization',
+            locales: {
+                '/': {
+                    defaultInfo: 'Authorization required',
                 },
-                before: (info: string): string =>
-                    `<div class="custom-container tip authorization">${info ? `<p class="custom-container-title">${info}</p>` : ''}`,
-                after: (): string => '<p><small>All authorization requests require you to first be <router-link to="#authentication">authenticated</router-link>.</small></p></div>\n'
+                '/zh/': {
+                    defaultInfo: '提示',
+                },
             },
-        ],
+            before: (info: string): string =>
+                `<div class="custom-container tip authorization">${info ? `<p class="custom-container-title">${info}</p>` : ''}`,
+            after: (): string =>
+                '<p><small>All authorization requests require you to first be <router-link to="#authentication">authenticated</router-link>.</small></p></div>\n',
+        }),
     ],
-})
+});
