@@ -1,5 +1,5 @@
 ---
-lang: en-US
+lang: en-GB
 title: Queue Concept Overview
 description: User Guide for people using ConnectNow Queue
 ---

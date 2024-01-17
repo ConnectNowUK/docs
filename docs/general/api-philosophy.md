@@ -1,5 +1,5 @@
 ---
-lang: en-US
+lang: en-GB
 title: General API Philosophy
 description: Description of ConnectNows approach to our APIs
 ---
@@ -59,7 +59,7 @@ ConnectNow APIs return the following status codes in its API:
 | 429 | `TOO MANY REQUESTS` | You have exceeded the rate-limiter limits
 | 500 | `INTERNAL SERVER ERROR` | There was a problem with the server - if you encounter this one, please let us know
 
-More general information about status codes can be found here: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+More general information about status codes can be found here: https://developer.mozilla.org/en-GB/docs/Web/HTTP/Status
 
 ## Paginated responses
 

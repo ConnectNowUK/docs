@@ -3,12 +3,12 @@ import type { DefaultThemeOptions } from 'vuepress'
 import { path } from '@vuepress/utils'
 
 export default defineUserConfig<DefaultThemeOptions>({
-    lang: 'en-US',
+    lang: 'en-GB',
     title: 'ConnectNow Docs',
     description: 'Just playing around',
 
     themeConfig: {
-        logo: 'https://public.connectnow.org.uk/logo.svg',
+        logo: 'https://d1jdn0pmurlmlu.cloudfront.net/cn-logo.svg',
         docsRepo: 'ConnectNowUK/docs',
         docsDir: 'docs',
         displayAllHeaders: true,
@@ -22,6 +22,13 @@ export default defineUserConfig<DefaultThemeOptions>({
             //     text: 'Issue Tracker',
             //     children: ['/issue-tracker/user-guide/', '/issue-tracker/developer-guide/api/'],
             // },
+
+            {
+                text: 'General',
+                children: [
+                    '/general/api-philosophy.md'
+                ]
+            },
 
             {
                 text: 'Issue Tracker',

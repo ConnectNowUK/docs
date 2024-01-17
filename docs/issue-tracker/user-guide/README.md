@@ -1,5 +1,5 @@
 ---
-lang: en-US
+lang: en-GB
 title: Issue Tracker User Guide
 description: Description of this page
 ---

@@ -1,5 +1,5 @@
 ---
-lang: en-US
+lang: en-GB
 title: Chat User Guide
 description: User Guide for using ConnectNow Chat
 ---

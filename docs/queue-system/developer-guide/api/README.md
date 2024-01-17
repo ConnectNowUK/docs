@@ -1,5 +1,5 @@
 ---
-lang: en-US
+lang: en-GB
 title: Queue API Guide
 description: Developer Guide for people using ConnectNow Queue System
 ---

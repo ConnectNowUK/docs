@@ -1,20 +1,17 @@
 ---
-lang: en-US
+lang: en-GB
 title: ConnectNow Docs
 description: Documentation regarding ConnectNow services
 sidebar: false
 home: true
 tagline: Get help on all ConnectNow products
 actions:
-  - text: Issue Tracker User Guide
-    link: /issue-tracker/user-guide/
+  - text: Get started
+    link: /general/api-philosophy.html
     type: primary
-  - text: Issue Tracker API Guide
-    link: /issue-tracker/developer-guide/api/
+  - text: Contact us
+    link: mailto:info@connectnow.org.uk
     type: secondary
-  - text: Chat User Guide
-    link: /chat/user-guide/user-guide.md
-    type: primary
 features:
   - title: Simplicity first
     details: Plain English, well documented documentation.

@@ -1,5 +1,5 @@
 ---
-lang: en-US
+lang: en-GB
 title: Chat API
 description: Description of this page
 ---

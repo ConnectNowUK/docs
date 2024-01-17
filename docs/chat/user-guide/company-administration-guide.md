@@ -1,5 +1,5 @@
 ---
-lang: en-US
+lang: en-GB
 title: Chat User Guide for Company Managers
 description: User Guide for company managers using ConnectNow Chat
 ---
