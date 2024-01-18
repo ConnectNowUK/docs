@@ -6,7 +6,7 @@ description: Description of ConnectNow's Flow Builder
 
 # Flow Builder
 
-::: tip
+::: danger WIP Feature
 This is a future develoment for ConnectNow, it isn't available yet. These docs are not finished and are subject to significant change. We're working on it, so hold tight!
 :::
 
