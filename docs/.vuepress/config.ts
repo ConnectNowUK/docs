@@ -1,19 +1,19 @@
-import { containerPlugin } from '@vuepress/plugin-container';
-import { defaultTheme, defineUserConfig } from 'vuepress';
-import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics';
-import { registerComponentsPlugin } from '@vuepress/plugin-register-components';
-import { searchPlugin } from '@vuepress/plugin-search';
-import { path } from '@vuepress/utils';
+import { containerPlugin } from "@vuepress/plugin-container";
+import { defaultTheme, defineUserConfig } from "vuepress";
+import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
+import { searchPlugin } from "@vuepress/plugin-search";
+import { path } from "@vuepress/utils";
 
 export default defineUserConfig({
-    lang: 'en-GB',
-    title: 'ConnectNow Docs',
-    description: 'Documentation for ConnectNow services',
+    lang: "en-GB",
+    title: "ConnectNow Docs",
+    description: "Documentation for ConnectNow services",
 
     theme: defaultTheme({
-        logo: 'https://d1jdn0pmurlmlu.cloudfront.net/cn-logo.svg',
-        docsRepo: 'ConnectNowUK/docs',
-        docsDir: 'docs',
+        logo: "https://d1jdn0pmurlmlu.cloudfront.net/cn-logo.svg",
+        docsRepo: "ConnectNowUK/docs",
+        docsDir: "docs",
         navbar: [
             // {
             //     text: 'Home',
@@ -26,109 +26,116 @@ export default defineUserConfig({
             // },
 
             {
-                text: "Technical",
+                text: "General",
                 children: [
                     {
-                        text: "General",
-                        children: ["/technical/api-philosophy.html"],
+                        text: "Technical",
+                        children: [
+                            "/general/api-philosophy.html",
+                            "/general/architecture.html",
+                        ],
                     },
                     {
                         text: "Reference",
-                        children: ["/technical/architecture.html"],
+                        children: ["/general/integration.html"],
                     },
                 ],
             },
 
             {
-                text: 'Issue Tracker',
+                text: "Issue Tracker",
                 children: [
                     {
-                        text: 'User Guides',
+                        text: "User Guides",
+                        children: ["/issue-tracker/user-guide/"],
+                    },
+                    {
+                        text: "Developer Guides",
+                        children: ["/issue-tracker/developer-guide/api/"],
+                    },
+                ],
+            },
+
+            {
+                text: "Chat",
+                children: [
+                    {
+                        text: "User Guides",
                         children: [
-                            '/issue-tracker/user-guide/',
+                            "/chat/user-guide/user-guide.md",
+                            {
+                                text: "Guide for Company Managers",
+                                link:
+                                    "/chat/user-guide/company-administration-guide.md",
+                            },
                         ],
                     },
                     {
-                        text: 'Developer Guides',
-                        children: ['/issue-tracker/developer-guide/api/'],
+                        text: "Developer Guides",
+                        children: ["/chat/developer-guide/api/"],
                     },
                 ],
             },
 
             {
-                text: 'Chat',
+                text: "Queue",
                 children: [
                     {
-                        text: 'User Guides',
+                        text: "User Guides",
                         children: [
-                            '/chat/user-guide/user-guide.md',
-                            { text: 'Guide for Company Managers', link: '/chat/user-guide/company-administration-guide.md' }
+                            "/queue-system/user-guide/concept-overview.md",
+                            "/queue-system/user-guide/user-guide.md",
                         ],
                     },
                     {
-                        text: 'Developer Guides',
-                        children: ['/chat/developer-guide/api/'],
+                        text: "Developer Guides",
+                        children: ["/queue-system/developer-guide/api/"],
                     },
                 ],
             },
 
             {
-                text: 'Queue',
+                text: "Policies",
                 children: [
-                    {
-                        text: 'User Guides',
-                        children: [
-                            '/queue-system/user-guide/concept-overview.md',
-                            '/queue-system/user-guide/user-guide.md',
-                        ],
-                    },
-                    {
-                        text: 'Developer Guides',
-                        children: ['/queue-system/developer-guide/api/'],
-                    },
+                    "/policies/data-policies.html",
+                    "/policies/terms.html",
+                    "/policies/privacy.html",
+                    "/policies/cookies.html",
                 ],
             },
-
-            {
-                text: 'Policies',
-                children: [
-                    '/policies/data-policies.html',
-                    '/policies/terms.html',
-                    '/policies/privacy.html',
-                    '/policies/cookies.html',
-                ],
-            }
         ],
     }),
     plugins: [
         googleAnalyticsPlugin({
-            id: 'G-HMS6SBZGCE',
+            id: "G-HMS6SBZGCE",
         }),
         searchPlugin({
             locales: {
-                '/': {
-                    placeholder: 'Search',
+                "/": {
+                    placeholder: "Search",
                 },
-                '/zh/': {
-                    placeholder: '搜索',
+                "/zh/": {
+                    placeholder: "搜索",
                 },
             },
         }),
         registerComponentsPlugin({
-            componentsDir: path.resolve(__dirname, './components'),
+            componentsDir: path.resolve(__dirname, "./components"),
         }),
         containerPlugin({
-            type: 'authorization',
+            type: "authorization",
             locales: {
-                '/': {
-                    defaultInfo: 'Authorization required',
+                "/": {
+                    defaultInfo: "Authorization required",
                 },
-                '/zh/': {
-                    defaultInfo: '提示',
+                "/zh/": {
+                    defaultInfo: "提示",
                 },
             },
             before: (info: string): string =>
-                `<div class="custom-container tip authorization">${info ? `<p class="custom-container-title">${info}</p>` : ''}`,
+                `<div class="custom-container tip authorization">${
+                    info ? `<p class="custom-container-title">${info}</p>` : ""
+                }`,
             after: (): string =>
                 '<p><small>All authorization requests require you to first be <router-link to="#authentication">authenticated</router-link>.</small></p></div>\n',
         }),

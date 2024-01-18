@@ -7,7 +7,7 @@ home: true
 tagline: Get help on all ConnectNow products
 actions:
   - text: Get started
-    link: /technical/api-philosophy.html
+    link: /general/api-philosophy.html
     type: primary
   - text: Contact us
     link: mailto:info@connectnow.org.uk
