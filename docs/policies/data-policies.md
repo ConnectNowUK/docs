@@ -4,13 +4,17 @@ title: Data Policies
 description: Description of ConnectNow's data policies
 ---
 
-# ConnectNow Data Policies
+# Data Policies
 
 ## Data Retention
 
-Data retention policy
+::: danger TODO
+:::
 
 ## Personally Identifiable Information (PII)
+
+::: danger TODO
+:::
 
 ConnectNow's systems gather the following PII;
 
@@ -22,12 +26,13 @@ We also generate a unique ID for your account.
 
 ## Data Sharing
 
-Data sharing policy.
-
+::: danger TODO
+:::
 We do not share your data with third parties for any purpose, including advertising or marketing.
 
 ConnectNow uses [Hotjar](https://www.hotjar.com/) to track usage habits, errors, and feedback. You can see Hotjar's terms [here](https://www.hotjar.com/legal/).
 
 ## Data Storage
 
-Data storage policy.
+::: danger TODO
+:::

@@ -33,11 +33,15 @@ export default defineUserConfig({
                         children: [
                             "/general/api-philosophy.html",
                             "/general/architecture.html",
+                            "/general/device-support.html",
                         ],
                     },
                     {
                         text: "Reference",
-                        children: ["/general/integration.html"],
+                        children: [
+                            "/general/integration.html",
+                            "/general/flow-builder.html",
+                        ],
                     },
                 ],
             },

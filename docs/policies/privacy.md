@@ -4,4 +4,7 @@ title: Privacy Policy
 description: ConnectNow's Privacy Policy
 ---
 
-# ConnectNow Privacy Policy
+# Privacy Policy
+
+::: danger TODO
+:::
