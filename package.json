@@ -6,9 +6,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:check": "vuepress docs",
-    "docs:build": "vuepress docs && vuepress build docs",
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "docs:build": "vuepress docs && vuepress build docs"
   },
   "author": "",
   "license": "ISC",
