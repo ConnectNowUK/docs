@@ -12,22 +12,22 @@ https://chat-api.connectnow.org.uk
 ```
 
 ::: tip IMPORTANT
-Make sure to familiarize yourself with the [API philosophy](/api-philosophy.md) before proceeding with this guide.
+Make sure to familiarize yourself with the [API philosophy](/general/api-philosophy.md) before proceeding with this guide.
 :::
 
 ## Authentication
 
 Because of the nature of Chat and specifically the ability to converse without having an account, two types of tokens exist for authentication depending on what you're trying to access.
 
-Also see: [API Philosophy - authentication](/api-philosophy.md#authentication)
+Also see: [API Philosophy - authentication](/general/api-philosophy.md#authentication)
 
 ### The two types of tokens
-1. API tokens are usual tokens that you use to authenticate most API requests. These follow our [API philosophy on authentication](/api-philosophy.md#authentication) using `api_token`
-2. Chat-user tokens are tokens that are scoped to a user in a given chat, and are required to interact as a given user in a given chat. These follow our [API philosophy on authentication](/api-philosophy.md#authentication), but use `chat_user_token` instead
+1. API tokens are usual tokens that you use to authenticate most API requests. These follow our [API philosophy on authentication](/general/api-philosophy.md#authentication) using `api_token`
+2. Chat-user tokens are tokens that are scoped to a user in a given chat, and are required to interact as a given user in a given chat. These follow our [API philosophy on authentication](/general/api-philosophy.md#authentication), but use `chat_user_token` instead
 
 ## Response Status Codes
 
-See: [API Philosophy - status codes](/api-philosophy.md#response-status-codes)
+See: [API Philosophy - status codes](/general/api-philosophy.md#response-status-codes)
 
 ## Current user
 

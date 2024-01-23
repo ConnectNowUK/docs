@@ -7,7 +7,7 @@ description: Developer Guide for people using ConnectNow Queue System
 Welcome to the Queue System developer-guide API docs!
 
 ::: tip IMPORTANT
-Make sure to familiarize yourself with the [API philosophy](/api-philosophy.md) before proceeding with this guide.
+Make sure to familiarize yourself with the [API philosophy](/general/api-philosophy.md) before proceeding with this guide.
 :::
 
 ::: warning
@@ -16,11 +16,11 @@ This documentation is a work in progress.
 
 ## Authentication
 
-See: [API Philosophy - authentication](/api-philosophy.md#authentication)
+See: [API Philosophy - authentication](/general/api-philosophy.md#authentication)
 
 ## Response Status Codes
 
-See: [API Philosophy - status codes](/api-philosophy.md#response-status-codes)
+See: [API Philosophy - status codes](/general/api-philosophy.md#response-status-codes)
 
 ## Blacklist hours of operation
 
