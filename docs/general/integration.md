@@ -28,4 +28,4 @@ We're always looking to add new integrations in to ConnectNow. If you use a spec
 This is a future development for ConnectNow. We're working on it, so hold tight!
 :::
 
-The [Flow Builder](/general/flow-builder.html). allows you to integrate any system with a REST API with ConnectNow, using a powerful but simple to use visual interface.
+The [Flow Builder](/general/flow-builder.md). allows you to integrate any system with a REST API with ConnectNow, using a powerful but simple to use visual interface.

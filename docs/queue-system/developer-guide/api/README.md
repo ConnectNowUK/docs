@@ -210,9 +210,9 @@ POST /api/company-users
 | `ability_to_pick_from_queue` | `boolean` |  `true` or `false` | :white_check_mark:  | `false` | Whether this company user can choose which queries to answer from the queue |
 | `is_auto_ability_to_pick_from_queue` | `boolean` | `true` or `false` | :white_check_mark:  | `true` | Whether this user's ability to choose which query they answer is manually set, or managed by the system. The system may change this value based on the user's performance and achievements. |
 | `role` | `string` | A valid role (agent, staffing_manager, or manager) | :white_check_mark: | `agent` | The access level for this company user |
-| `is_active` | `boolean` | `true` or `false` | :white_check_mark: | `true` | Whether this company user is active or not. See: [Billing - active users](../../user-guide/billing.html#active-users])) |
+| `is_active` | `boolean` | `true` or `false` | :white_check_mark: | `true` | Whether this company user is active or not. See: [Billing - active users](../../user-guide/billing.md#active-users])) |
 
-When creating a user, a personal queue is also created. See: [Concept Overview - personal queues](../../user-guide/concept-overview.html#personal-queues])). In addition, a default user state is also created, with `is_available` set to `0` (false). Lastly, an invitation email is sent to the `invited_email`.
+When creating a user, a personal queue is also created. See: [Concept Overview - personal queues](../../user-guide/concept-overview.md#personal-queues])). In addition, a default user state is also created, with `is_available` set to `0` (false). Lastly, an invitation email is sent to the `invited_email`.
 
 ## Company user skills
 
@@ -371,8 +371,8 @@ POST /api/queues
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `name` | `string` | Text | :white_check_mark: | - | The name of the queue |
 | `company_id` | `integer` | A valid company ID | :white_check_mark: | - | The ID of the company this queue belongs to |
-| `password` | `string` | TODO: password rules | - | - | The password for this queue (see: [Concept Overview - password protected queues](../../user-guide/concept-overview.html#password-protected-queues])) |
-| `priority_delay` | `number` | A valid integer | - | - | Time delay in seconds for a query to escalate to additional users (see: [Concept Overview - queue routing logic](../../user-guide/concept-overview.html#queue-routing-logic]))  |
+| `password` | `string` | TODO: password rules | - | - | The password for this queue (see: [Concept Overview - password protected queues](../../user-guide/concept-overview.md#password-protected-queues])) |
+| `priority_delay` | `number` | A valid integer | - | - | Time delay in seconds for a query to escalate to additional users (see: [Concept Overview - queue routing logic](../../user-guide/concept-overview.md#queue-routing-logic]))  |
 | `is_active` | `boolean` |  `true` or `false` | :white_check_mark: | `true` | Whether this queue is active or not |
 | `skill_ids` | `array` |  Array of valid skill IDs | - | - | An array of ID's of skills that the queue requires |
 
@@ -414,7 +414,7 @@ POST /api/queries
 
 ### Answer a query
 ::: authorization
-User must be authenticated and have rights for the company, as well as all required skills for the queue (unless the queue is a personal queue that belongs to the authenticated person) Also see: [Concept Overview - queue routing logic](../../user-guide/concept-overview.html#queue-routing-logic).
+User must be authenticated and have rights for the company, as well as all required skills for the queue (unless the queue is a personal queue that belongs to the authenticated person) Also see: [Concept Overview - queue routing logic](../../user-guide/concept-overview.md#queue-routing-logic).
 :::
  
 ::: tip
