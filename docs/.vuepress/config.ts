@@ -32,16 +32,17 @@ export default defineUserConfig({
           {
             text: "Technical",
             children: [
-              "/general/api-philosophy.html",
-              "/general/architecture.html",
-              "/general/device-support.html",
+              "/general/api-philosophy.md",
+              "/general/architecture.md",
+              "/general/device-support.md",
+              "/general/roadmap.md",
             ],
           },
           {
             text: "Reference",
             children: [
-              "/general/integration.html",
-              "/general/flow-builder.html",
+              "/general/integration.md",
+              "/general/flow-builder.md",
             ],
           },
         ],
@@ -101,10 +102,10 @@ export default defineUserConfig({
       {
         text: "Policies",
         children: [
-          "/policies/data-policies.html",
-          "/policies/terms.html",
-          "/policies/privacy.html",
-          "/policies/cookies.html",
+          "/policies/data-policies.md",
+          "/policies/terms.md",
+          "/policies/privacy.md",
+          "/policies/cookies.md",
         ],
       },
     ],
